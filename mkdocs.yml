@@ -1,0 +1,82 @@
+
+
+# Project information
+site_name: "Duplicati 2 User's Manual"
+site_description: 'Documentation for Duplicati 2'
+site_author: 'K. Zaaijer'
+site_url: 'https://www.duplicati.com/'
+
+# Repository
+repo_name: 'squidfunk/mkdocs-material'
+repo_url: 'https://github.com/squidfunk/mkdocs-material'
+
+# Copyright
+copyright: 'Copyright &copy; 2016 - 2017 The Duplicati Team'
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'blue'
+    accent: 'blue'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  logo: 'duplicatilogo.png'
+  favicon: 'favicon.ico'
+  feature:
+    tabs: false
+
+# Customization
+extra:
+  social:
+    - type: 'edge'
+      link: 'https://www.duplicati.com'
+    - type: 'comment'
+      link: 'https://forum.duplicati.com'
+    - type: 'github'
+      link: 'https://github.com/duplicati/duplicati'
+    - type: 'google-plus'
+      link: 'https://plus.google.com/105271984558189185842'
+    - type: 'facebook'
+      link: 'http://www.facebook.com/pages/Duplicati/105118456272281'
+    - type: 'btc'
+      link: 'bitcoin:1Lfzs4EQBtjqQyARfxW1vH5JMRaz7tVCir'
+    - type: 'paypal'
+      link: 'https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=paypal%40hexad%2edk&item_name=Duplicati%20Donation&no_shipping=2&no_note=1&tax=0&currency_code=EUR&bn=PP%2dDonationsBF&charset=UTF%2d8&lc=US'
+
+
+# Google Analytics
+google_analytics:
+  - 'UA-XXXXXXXX-X'
+  - 'auto'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+
+
+
+pages:
+    - Home: index.md
+    - Manual:
+        - Introduction: 01-introduction.md
+        - Installation: 02-installation.md
+        - Using the Graphical User Interface: "03-using-the-graphical-user-interface.md"
+        - Using Duplicati from the Command Line: "04-using-duplicati-from-the-command-line.md"
+        - Storage Providers: "05-storage-providers.md"
+        - Advanced Options: "06-advanced-options.md"
+        - Other Command Line Utilities: "07-other-command-line-utilities.md"
+        - Disaster Recovery: "08-disaster-recovery.md"
+    - Articles:
+        - "How the Backup Process Works": "appendix-a-how-the-backup-process-works.md"
+        - "How the Restore Process Works": "appendix-b-how-the-restore-process-works.md"
+        - "Choosing Sizes in Duplicati": "appendix-c-choosing-sizes-in-duplicati.md"
+        - "Filters": "appendix-d-filters.md"
+        - "How We Get Along With OAuth": "appendix-e-how-we-get-along-with-oauth.md"
+    - License Agreement: "appendix-f-license-agreement.md"
