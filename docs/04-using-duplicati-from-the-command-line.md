@@ -181,8 +181,10 @@ Marks old data deleted and removes outdated dlist files. A backup is deleted whe
 
 Some advanced options:
 
+* `--dry-run`  
+Performs the operation, but does not write changes to the local database or the remote storage.
 * `--keep-time=<time>`  
-Marks data outdated that is older than <time>.
+Marks data outdated that is older than `<time>`.
 * `--keep-versions=<int>`  
 Marks data outdated that is older than <int> versions.
 *  `--version=<int>`  
@@ -295,6 +297,3 @@ The name of the operation, usually `backup`, but could also be `restore` etc.
 The backend url.
 * `%LOCALPATH%`  
 The path to the local folders involved (i.e. the folders being backed up).
-
-
-
