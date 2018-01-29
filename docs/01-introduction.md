@@ -1,4 +1,3 @@
-
 ## About this manual
 
 This manual can be used as a guide to lead you through the features of Duplicati, but it can also be used as a reference guide.
@@ -83,7 +82,7 @@ When a file is in use by a process or application, it usually cannot be read by 
 
 ## License
 
-Duplicati is licensed under LGPL and available for Windows and Linux. The software is free to use, even commercially. More information about the LGPL licensing model can be found in [APPENDIX G License Agreement](#_APPENDIX_G_License).
+Duplicati is licensed under LGPL and available for Windows and Linux. The software is free to use, even commercially. More information about the LGPL licensing model can be found in [License Agreement](appendix-f-license-agreement).
 
 ## Supported backends
 
@@ -166,4 +165,3 @@ Imagine your local files consist of many small bricks in different shapes and co
 From time to time, Duplicati will notice that there are a few bags that contain bricks it does not need anymore. It grabs those bags, sorts the bricks. It throws away the bricks that are not needed anymore, then it puts the required bricks into new bags and puts them back into the box. Duplicati will also notice if there is a large number of bags that only contain a very small number of bricks. Duplicati grabs all those bags, takes out the bricks, puts them into a small number of new bags and puts these into the box.
 
 And to say the good news again: There is no need to upload full backups regularly. This makes Duplicati a perfect choice for incremental backups of large media libraries.
-
