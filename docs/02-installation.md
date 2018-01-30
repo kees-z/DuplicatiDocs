@@ -36,8 +36,7 @@ Registering Duplicati as a service could also be a solution if you want to make 
 
 If your system has no or an outdated version of the .NET Framework, download the latest version from [https://www.microsoft.com/net/download/framework](https://www.microsoft.com/net/download/framework) and install it.
 
-To be able to backup files that are in use by another process, Duplicati uses AlphaVSS to accomplish this. AlphaVSS needs the Visual C++ run-time components for Visual Studio 2015. Download and install the binaries from [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145). 
-<img align="right" src="/icon_windows_end.png"></img></br>
+To be able to backup files that are in use by another process, Duplicati uses AlphaVSS to accomplish this. AlphaVSS needs the Visual C++ run-time components for Visual Studio 2015. Download and install the binaries from [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145). ![](icon_windows_end.png)
 
 *****
 
