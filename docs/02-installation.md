@@ -153,14 +153,13 @@ yum-config-manager --add-repo http://download.mono-project.com/repo/centos6/
 yum install mono-devel
 
 ```
-<img align="right" src="/icon_linux_end.png"></img></br>  
+![](icon_linux_end.png)  
   
 *****
 
 
 *****
-![](icon_apple_begin.png) Download the latest Mono version from [http://www.mono-project.com/download/](http://www.mono-project.com/download/). Run the .pkg file and accept the terms of the license.
-<img align="right" src="/icon_apple_end.png"></img></br>
+![](icon_apple_begin.png) Download the latest Mono version from [http://www.mono-project.com/download/](http://www.mono-project.com/download/). Run the .pkg file and accept the terms of the license. ![](icon_apple_end.png)
 
 *****
 
