@@ -19,7 +19,7 @@ If you don't use the tray icon (for example if you disabled _Launch Duplicati at
 
 The default url is http://localhost:8200
 
-This can be changed by providing command line options to Duplicati.Server.exe or Duplicati.GUI.TrayIcon.exe. See [Duplicati.GUI.TrayIcon.exe](#_duplicati.gui.trayicon.exe), [Duplicati.Server.exe](#_duplicati.server.exe) and [Duplicati.WinowsService.exe](#_duplicati.winowsservice.exe) for more information.
+This can be changed by providing command line options to Duplicati.Server.exe or Duplicati.GUI.TrayIcon.exe. See [Duplicati.GUI.TrayIcon.exe](07-other-command-line-utilities/#duplicati-gui-trayicon-exe), [Duplicati.Server.exe](07-other-command-line-utilities/#duplicati-server-exe) and [Duplicati.WinowsService.exe](07-other-command-line-utilities/#duplicati-windowsservice-exe) for more information.
 
 The first time you start the Duplicati Web interface, this message is presented:  
 ![](ss_usinggui_01.png)
@@ -177,7 +177,8 @@ In step 5 you can set the Upload Volume size and how many backups should be avai
 An Upload Volume is an encrypted compressed file that contains a part of your backup. For normal backup operations you can keep this value unchanged, but in some scenarios, for example very large backups, you can increase size to reduce the number of files at the remote storage location. The default size for an Upload Volume is 50 MB. Increase this value if needed.
 
 *****
-> ![](icon_important.png) The Upload volume size is not the maximum capacity that is offered by your storage provider. It is the size of each chunk of data that is uploaded to the backend during a backup operation. Increasing the size of an upload volume will reduce the number of files at the backend, but will require to download more data when performing restore operations. See APPENDIX C Choosing sizes in Duplicati for more information about block- and volume sizes.
+> ![](icon_important.png) The Upload volume size is not the maximum capacity that is offered by your storage provider. It is the size of each chunk of data that is uploaded to the backend during a backup operation. Increasing the size of an upload volume will reduce the number of files at the backend, but will require to download more data when performing restore operations. See [Choosing sizes in Duplicati]( 
+appendix-c-choosing-sizes-in-duplicati) for more information about block- and volume sizes.
 
 *****
 
@@ -360,7 +361,7 @@ Then file information is being retrieved.
 
 ![](ss_restorefiles_18.png)
 
-After the Fetching path information task has been completed, the restore process is exactly the same as described in [Restoring files from a backup](#_Restoring_files_from).
+After the Fetching path information task has been completed, the restore process is exactly the same as described in [Restoring files from a backup](03-using-the-graphical-user-interface/#restoring-files-from-a-backup).
 
 ## Editing an existing backup
 
@@ -527,7 +528,7 @@ You can delete a backup job if you no longer need to backup the files included i
 
 In the _Delete backup_ screen, you can choose to keep or delete the local database associated with the selected backup job. Default setting is to delete the local database, because it is no longer needed if the backup job no longer exist. In addition to that, the database can be rebuilt from using the files at the backend.
 
-Before deleting a backup job, it is recommended to export the backup job settings to a file. The _Export configuration_ button is a quick link to this function. More about exporting backup configuration can be found in [Exporting a backup job configuration](#_Exporting_a_backup).
+Before deleting a backup job, it is recommended to export the backup job settings to a file. The _Export configuration_ button is a quick link to this function. More about exporting backup configuration can be found in [Exporting a backup job configuration](03-using-the-graphical-user-interface/#exporting-a-backup-configuration).
 
 If you no longer need the backup files themselves, Duplicati can delete these files from the backend, freeing up remote storage space.
 
