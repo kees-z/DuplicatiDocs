@@ -230,7 +230,8 @@ Browse to this folder and edit the properties of the Duplicati 2 shortcut. Add  
 A Duplicati icon will be shown in the system tray after logging in to Windows, but the Duplicati server component needs to be started separately.
 
 *****
-> ![](icon_info.png) If you disabled Launch Duplicati at startup in the installation wizard and want to startup the Duplicati Server component during bootup time, you have to register Duplicati Server as a Windows service. See [Duplicati.WindowsService.exe](#duplicati-windowsservice-exe) for more information.
+> ![](icon_info.png) If you disabled Launch Duplicati at startup in the installation wizard and want to startup the Duplicati Server component during bootup time, you have to register Duplicati Server as a Windows service. See [Duplicati.WindowsService.exe]( 
+07-other-command-line-utilities/#duplicati-windowsservice-exe) for more information.
 
 *****
 ![](icon_windows_end.png)
