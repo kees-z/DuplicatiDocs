@@ -19,7 +19,7 @@ If you don't use the tray icon (for example if you disabled _Launch Duplicati at
 
 The default url is http://localhost:8200
 
-This can be changed by providing command line options to Duplicati.Server.exe or Duplicati.GUI.TrayIcon.exe. See [Duplicati.GUI.TrayIcon.exe](07-other-command-line-utilities/#duplicati-gui-trayicon-exe), [Duplicati.Server.exe](07-other-command-line-utilities/#duplicati-server-exe) and [Duplicati.WinowsService.exe](07-other-command-line-utilities/#duplicati-windowsservice-exe) for more information.
+This can be changed by providing command line options to Duplicati.Server.exe or Duplicati.GUI.TrayIcon.exe. See [Duplicati.GUI.TrayIcon.exe](07-other-command-line-utilities/#duplicatiguitrayiconexe), [Duplicati.Server.exe](07-other-command-line-utilities/#duplicatiserverexe) and [Duplicati.WinowsService.exe](07-other-command-line-utilities/#duplicatiwindowsserviceexe) for more information.
 
 The first time you start the Duplicati Web interface, this message is presented:  
 ![](ss_usinggui_01.png)
@@ -312,7 +312,7 @@ After the operation has been completed, Duplicati will notify you and encourage 
 
 If you want to restore your files without being able to use your Duplicati installation (for example on another computer, or after a system crash), you have to restore your files directly from the backup destination.
 
-If Duplicati isn't installed on the computer you want to restore to, download and install Duplicati first. See [Installation](#_Installation) for more information.
+If Duplicati isn't installed on the computer you want to restore to, download and install Duplicati first. See [Installation](02-installation) for more information.
 
 To start a restore operation without a configured backup job, click Restore in the main menu. You have 2 options:
 
@@ -528,7 +528,7 @@ You can delete a backup job if you no longer need to backup the files included i
 
 In the _Delete backup_ screen, you can choose to keep or delete the local database associated with the selected backup job. Default setting is to delete the local database, because it is no longer needed if the backup job no longer exist. In addition to that, the database can be rebuilt from using the files at the backend.
 
-Before deleting a backup job, it is recommended to export the backup job settings to a file. The _Export configuration_ button is a quick link to this function. More about exporting backup configuration can be found in [Exporting a backup job configuration](03-using-the-graphical-user-interface/#exporting-a-backup-configuration).
+Before deleting a backup job, it is recommended to export the backup job settings to a file. The _Export configuration_ button is a quick link to this function. More about exporting backup configuration can be found in [Exporting a backup job configuration](03-using-the-graphical-user-interface/#exporting-a-backup-job-configuration).
 
 If you no longer need the backup files themselves, Duplicati can delete these files from the backend, freeing up remote storage space.
 
