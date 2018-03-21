@@ -264,7 +264,7 @@ If you want to restore one or more files from a backup, you can start the restor
 
 * By clicking the backup name and click Restore files ? under Operations.  
 ![](ss_restorefiles_01.png)
-* ?	By clicking Restore in the main menu, select the backup you want to restore from and clicking Next.  
+* By clicking Restore in the main menu, select the backup you want to restore from and clicking Next.  
 ![](ss_restorefiles_02.png)
 
 The Restore wizard consists of two steps. In step 1 you can specify what you want to restore and from which restore point you want to restore these files. In step 2 you can choose to what location you want to restore the files and supply some options for the restore operation.
