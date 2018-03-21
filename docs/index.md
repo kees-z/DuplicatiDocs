@@ -5,11 +5,11 @@
 
 ![](duplicatilogo.png)
 
-Revision 0.5  
-2017/11/21
+Revision 1.0  
+2018/03/21
 K. Zaaijer
 
-Copyright © 2017 by The Duplicati Team.  
+Copyright © 2018 by The Duplicati Team.  
 All rights reserved. This book or any portion thereof  
 may not be reproduced or used in any manner whatsoever  
 without the express written permission of the publisher  
