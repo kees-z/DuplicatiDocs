@@ -115,6 +115,7 @@ The following Cloud Storage Providers are supported natively by Duplicati:
 * HubiC
 * Jottacloud
 * Mega.nz
+* Microsoft Office 365 Groups
 * Microsoft OneDrive
 * Microsoft OneDrive for Business
 * Microsoft SharePoint
