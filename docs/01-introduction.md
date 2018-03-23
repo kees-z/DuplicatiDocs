@@ -120,6 +120,7 @@ The following Cloud Storage Providers are supported natively by Duplicati:
 * Microsoft SharePoint
 * OpenStack Simple Storage
 * Rackspace CloudFiles
+* Rclone
 * Sia Decentralized Cloud
 
 Other supported targets:
