@@ -455,18 +455,108 @@ The password used to connect to the server. This may also be supplied as the env
 Supplies the username used to connect to the server.  
 The username used to connect to the server. This may also be supplied as the environment variable `AUTH_USERNAME`.
 
-## Microsoft OneDrive
+## Microsoft Office 365 Group (Microsoft Graph API)
 
-Duplicati can use Microsoft Onedrive to store backups. The following target URL format is used:
+This backend can store backups in the document library associated with a Microsoft Office 365 Group, using the following URL format:
+
+`msgroup://folder/subfolder`
+
+Options:
+
+* `--authid (Password)`  
+The authorization token retrieved from [https://duplicati-oauth-handler.appspot.com?type=msgroup](https://duplicati-oauth-handler.appspot.com?type=msgroup)
+* `--group-email (String)`  
+Email address of the group to store data in, for example: `test@example.com`.  
+Either this parameter or `--group-id` is required.  
+When this parameter is specified, the group's ID is looked up automatically.
+* `--group-id (String)`  
+ID of the group to store data in.  
+Either this parameter or `--group-email` is required.  
+This ID can be looked up by querying in the [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+* `--fragment-size (Integer)`  
+Size of individual fragments which are uploaded separately for large files.  
+It is recommended to be between `5-10 MiB` (though a smaller value may work better on a slower or less reliable connection), and to be a multiple of `320 KiB`.  
+Default value: `10 MiB`
+* `--fragment-retry-count (Integer)`  
+Number of retry attempts made for each fragment before failing the overall file upload.  
+Default value: `5`
+* `--fragment-retry-delay (Integer)`  
+Amount of time (in milliseconds) to wait between failures when uploading fragments.  
+Default value: `1000`
+
+## Microsoft OneDrive v2 (Microsoft Graph API)
+
+This backend can store backups in both OneDrive and OneDrive for Business via the Microsoft Graph API, using the following URL format:
+
+`onedrivev2://folder/subfolder`
+
+Options:
+
+* `--authid (Password)`  
+The authorization token retrieved from [https://duplicati-oauth-handler.appspot.com?type=onedrivev2](https://duplicati-oauth-handler.appspot.com?type=onedrivev2)
+* `--fragment-size (Integer)`  
+Size of individual fragments which are uploaded separately for large files.  
+It is recommended to be between `5-10 MiB` (though a smaller value may work better on a slower or less reliable connection), and to be a multiple of `320 KiB`.  
+Default value: `10 MiB`
+* `--fragment-retry-count (Integer)`  
+Number of retry attempts made for each fragment before failing the overall file upload.  
+Default value: `5`
+* `--fragment-retry-delay (Integer)`  
+Amount of time (in milliseconds) to wait between failures when uploading fragments.  
+Default value: `1000`
+
+## Microsoft SharePoint v2 (Microsoft Graph API)
+
+This backend can store backups in SharePoint sites via the Microsoft Graph API, using the following URL format:
+
+`sharepoint://{tenant}.sharepoint.com/{Path/To/Web}//{BaseDocLibrary}/{folder/subfolder}`
+
+A double slash, `//`, can optionally be used in the path to provide a hint to the location of the split between the site's base web address and the document library path.
+
+Additionally, if the ID of the site is known (e.g., by discovering it in the [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)), it can be explicitly specified via the `--site-id` parameter, and the URL can be given with just the relative path within the document library:
+
+`sharepoint://folder/subfolder`
+
+Options:
+
+* `--authid (Password)`  
+The authorization token retrieved from [https://duplicati-oauth-handler.appspot.com?type=sharepoint](https://duplicati-oauth-handler.appspot.com?type=sharepoint)
+* `--site-id (String)`  
+ID of the SharePoint site to store data in.  
+This parameter is required when using the relative document library path (without specifying the SharePoint site's web address).  
+This ID can be looked up by querying in the [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).  
+When the SharePoint site's full web address is provided, it is looked up automatically.
+* `--fragment-size (Integer)`  
+Size of individual fragments which are uploaded separately for large files.  
+It is recommended to be between `5-10 MiB` (though a smaller value may work better on a slower or less reliable connection), and to be a multiple of `320 KiB`.  
+Default value: `10 MiB`
+* `--fragment-retry-count (Integer)`  
+Number of retry attempts made for each fragment before failing the overall file upload.  
+Default value: `5`
+* `--fragment-retry-delay (Integer)`  
+Amount of time (in milliseconds) to wait between failures when uploading fragments.  
+Default value: `1000`
+
+## Microsoft OneDrive (LiveConnect API)
+
+*****
+> ![](icon_important.png) The LiveConnect API this backend is based on is deprecated and [will be disabled on November 1st, 2018](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/concepts/migrating-from-live-sdk). New backups to OneDrive should be created using the OneDrive v2 backend based on the Microsoft Graph API, and existing backups should be migrated.
+*****
+
+Duplicati can use Microsoft OneDrive to store backups. The following target URL format is used:
 
 `onedrive://folder/subfolder`
 
 Options:
 
-* `--authid`  
+* `--authid (Password)`  
 The authorization token retrieved from [https://duplicati-oauth-handler.appspot.com?type=onedrive](https://duplicati-oauth-handler.appspot.com?type=onedrive)
 
-## Microsoft OneDrive for Business
+## Microsoft OneDrive for Business (Microsoft.SharePoint.Client API)
+
+*****
+> ![](icon_info.png) This backend is based on the Microsoft.SharePoint.Client library, and doesn't support features like OAuth or two-factor authentication (2FA). The Microsoft OneDrive v2 backend supports these features, and is also compatible with OneDrive for Business.
+*****
 
 Supports connections to Microsoft OneDrive for Business. Allowed formats are
 
@@ -506,7 +596,11 @@ Set block size for chunked uploads to SharePoint.
 Use this option to specify the size of each chunk when uploading to SharePoint Server. Recommended value is 4MB.  
 Default value: `4mb`
 
-## Microsoft SharePoint
+## Microsoft SharePoint (Microsoft.SharePoint.Client API)
+
+*****
+> ![](icon_info.png) This backend is based on the Microsoft.SharePoint.Client library, and doesn't support features like OAuth or two-factor authentication (2FA). The Microsoft SharePoint v2 backend supports these features.
+*****
 
 Supports connections to a SharePoint server (including OneDrive for Business). Allowed formats are
 
