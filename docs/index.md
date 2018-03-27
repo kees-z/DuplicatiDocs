@@ -5,7 +5,7 @@
 
 ![](duplicatilogo.png)
 
-Revision 1.0  
+  
 2018/03/21  
   
   
