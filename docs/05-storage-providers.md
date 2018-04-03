@@ -438,13 +438,13 @@ Supplies the backup device to use.
 The backup device to use. Will be created if not already exists. You can manage your devices from the backup panel in the Jottacloud web interface. When you specify a custom device you should also specify the mount point to use on this device with the `jottacloud-mountpoint` option.
 * `--jottacloud-mountpoint (String)`  
 Supplies the mount point to use on the server.  
-The mount point to use on the server. The default is `Archive` for using the built-in archive mount point. Set this option to` `Sync` to use the built-in synchronization mount point instead, or if you have specified a custom device with option `jottacloud-device` you are free to name the mount point as you like.
+The mount point to use on the server. The default is `Archive` for using the built-in archive mount point. Set this option to `Sync` to use the built-in synchronization mount point instead, or if you have specified a custom device with option `jottacloud-device` you are free to name the mount point as you like.
 
 ## Mega.nz
 
 This backend can read and write data to Mega.co.nz. Allowed format:
 
-`mega://folder/subfolder
+`mega://folder/subfolder`
 
 Supported options:
 
