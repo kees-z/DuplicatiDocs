@@ -26,12 +26,12 @@ If a procedure is different for an operating system other than Windows, a small 
 *****
 
 *****
-![](icon_linux_begin.png) This is an example of a Windows-specific procedure. ![](icon_linux_end.png)
+![](icon_linux_begin.png) This is an example of a Linux-specific procedure. ![](icon_linux_end.png)
 
 *****
 
 *****
-![](icon_apple_begin.png) This is an example of a Windows-specific procedure. ![](icon_apple_end.png)
+![](icon_apple_begin.png) This is an example of a MacOS-specific procedure. ![](icon_apple_end.png)
 
 *****
 
