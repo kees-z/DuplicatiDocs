@@ -26,12 +26,12 @@ If a procedure is different for an operating system other than Windows, a small 
 *****
 
 *****
-![](icon_linux_begin.png) This is an example of a Windows-specific procedure. ![](icon_linux_end.png)
+![](icon_linux_begin.png) This is an example of a Linux-specific procedure. ![](icon_linux_end.png)
 
 *****
 
 *****
-![](icon_apple_begin.png) This is an example of a Windows-specific procedure. ![](icon_apple_end.png)
+![](icon_apple_begin.png) This is an example of a MacOS-specific procedure. ![](icon_apple_end.png)
 
 *****
 
@@ -72,7 +72,7 @@ Duplicati comes with a web interface. It can be used to configure and run backup
 * **Command Line interface**  
 We did not forget about system admins! Duplicati offers all functions and feature via Duplicati.Commandline.exe. This allows you to add backup features to your scripts or run backups in a terminal window.
 * **Meta data**  
-Duplicati also stored the meta data of files in the backup. When backup files are restored, the timestamps (last modified, created) will also be restored as well as the system's access permissions. To avoid inaccessible files e.g. when the system user's have changed, restoring of access permissions is optional.
+Duplicati also stores the meta data of files in the backup. When backup files are restored, the timestamps (last modified, created) will also be restored as well as the system's access permissions. To avoid inaccessible files e.g. when the system user's have changed, restoring of access permissions is optional.
 * **Scheduler**  
 The built-in scheduler runs your backups automatically at the times and intervals you define. One backup everyday, at the weekend, every hour or even 3pm every 3rd Monday is possible. And even if a date is missed, Duplicati will run the job as soon as possible.
 * **Auto-updater**  
@@ -115,6 +115,7 @@ The following Cloud Storage Providers are supported natively by Duplicati:
 * HubiC
 * Jottacloud
 * Mega.nz
+* Microsoft Office 365 Groups
 * Microsoft OneDrive
 * Microsoft OneDrive for Business
 * Microsoft SharePoint
@@ -140,7 +141,7 @@ Because many devices run on an operating system based on Linux, Duplicati can be
 
 Windows-based devices should have .NET Framework 3.5 or higher installed. For Linux and OSX, a recent version of Mono is a requirement.
 
-Duplicati can make backups of files that are opened by other processes. For Windows, a snapshot of the file system is created using Volume Shadowcopy Services (VSS), LVM is used on Linux Systems. To be able to create a VSS snapshot, Duplicati needs C++ run-time components for Visual Studio 2015 to be installed.
+Duplicati can make backups of files that are opened by other processes. For Windows, a snapshot of the file system is created using Volume Shadowcopy Services (VSS), LVM is used on Linux Systems. To be able to create a VSS snapshot, Duplicati needs C++ run-time components for Visual Studio 2015 to be installed and must be run with administrator privileges.
 
 Duplicati is resource-friendly by design. There are no specific requirements for internal memory or processor performance.
 

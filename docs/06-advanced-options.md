@@ -47,7 +47,7 @@ Set this option if you prefer to have the commandline version automatically upda
 `--auto-vacuum = false`  
 Some operations that manipulate the local database leave unused entries behind. These entries are not deleted from a hard drive until a VACUUM operation is run. This operation saves disk space in the long run but needs to temporarily create a copy of all valid entries in the database. Setting this to true will allow Duplicati to perform VACUUM operations at its discretion.
 
-#backup-name
+### backup-name
 `--backup-name = Duplicati.CommandLine`  
 A display name that is attached to this backup. Can be used to identify the backup when sending mail or running scripts.
 
