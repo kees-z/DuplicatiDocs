@@ -458,7 +458,7 @@ The username used to connect to the server. This may also be supplied as the env
 ## Microsoft Office 365 Group (Microsoft Graph API)
 
 *****
-> ![](icon_important.png) Using this backend requires the [`Groups.ReadWrite.All` permission scope](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#group-permissions) in the Microsoft Graph APIs. These permissions require [admin consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes) to enable.
+> ![](icon_important.png) Using this backend requires the [`Group.ReadWrite.All` permission scope](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#group-permissions) in the Microsoft Graph APIs. These permissions require [admin consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes) to enable.
 *****
 
 This backend can store backups in the document library associated with a Microsoft Office 365 Group, using the following URL format:
