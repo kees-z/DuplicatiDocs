@@ -457,6 +457,11 @@ The username used to connect to the server. This may also be supplied as the env
 
 ## Microsoft Office 365 Group (Microsoft Graph API)
 
+*****
+> ![](icon_important.png) Specifying the group's email address when using this backend requires the [`Group.Read.All` permission scope](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#group-permissions) in the Microsoft Graph APIs. These permissions require [admin consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes) to enable.  
+You can use this backend without this permission by using an AuthID generated for the `SharePoint v2` backend and passing the `--group-id` instead of `--group-email`. You can lookup the group ID by using the [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+*****
+
 This backend can store backups in the document library associated with a Microsoft Office 365 Group, using the following URL format:
 
 `msgroup://folder/subfolder`
