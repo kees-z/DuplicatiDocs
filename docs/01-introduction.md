@@ -17,7 +17,7 @@ Additional information about a subject is marked with a small circle containing 
 *****
 
 
-This manual tries to cover all types of installations, but focusses on Windows installations. Most procedures are identical for installations on different operating systems, because many operations are controlled by a built-in web interface.  
+This manual tries to cover all types of installations, but focuses on Windows installations. Most procedures are identical for installations on different operating systems, because many operations are controlled by a built-in web interface.  
 If a procedure is different for an operating system other than Windows, a small section will be added to explain that procedure for Linux and/or OS X. OS-specific procedures are marked with these symbols:
 
 *****
@@ -53,7 +53,7 @@ Duplicati needs to be installed on the host where the backup source files are st
 
 ## Features
 
-Duplicati has a lot of advanced features, that can only be found in high-end enterprise backup solutions. Duplicati offers these features for free:
+Duplicati has a lot of advanced features that can only be found in high-end enterprise backup solutions. Duplicati offers these features for free:
 
 * **Strong encryption**  
 Duplicati uses strong AES-256 encryption to protect your backups. It is designed following the TNO principle: Trust No One. For instance, all data is encrypted locally before it is transferred to the remote storage system. The password/key to your backup never leaves your computer. Instead of AES-256 you can use a local GPG instance to encrypt your backup.
@@ -62,13 +62,13 @@ Duplicati performs a full backup initially. Afterwards, Duplicati updates the in
 * **Compression**  
 All backup data is compressed before it is encrypted and uploaded. Duplicati supports Zip/Deflate or 7z/LZMA2 compression. For performance reasons, Duplicati detects files that are compressed already and adds those as they are to the Zip or 7z archives. For example, media files such as mp3, jpeg or mkv files contain very well compressed data already.
 * **Online backup verification**  
-Duplicati is built to work with simple storage systems. Many providers offer compatible storages and often at cheap prices. As a downside of this, some storage system might store corrupt data. And most people usually notice that, when they need their backup to restore files they have lost and restoring fails. To avoid that Duplicati regularly downloads a random set of backup files, restores their content and checks their integrity. That way you can detect problems with your online storage before you run into troubles.
+Duplicati is built to work with simple storage systems. Many providers offer compatible storages and often at cheap prices. As a downside of this, some storage systems may store corrupted data. Most people only notice the corruption when they attempt to restore files they have lost and restoring fails. To avoid that Duplicati regularly downloads a random set of backup files, restores their content and checks their integrity. That way you can detect problems with your online storage before you run into trouble.
 * **Deduplication**  
 Duplicati analyzes the content of files and stores data blocks. Due to that, Duplicati will find duplicate files and similar content and store this only once in the backup. As Duplicati analyzes the content of files it can handle situations very well if files and folders are moved or renamed. As the content does not change, the next backup will be tiny.
 * **Fail-safe design**  
 Duplicati is designed to handle various kinds of issues: Network hiccups, interrupted backups, unavailable or corrupt storage systems. Even if a backup run was interrupted, it can be continued at a later time. Duplicati will then backup everything that was missed in the last backup. And even if remote files get corrupted, Duplicati can try to repair them if local data is still present or restore as much as possible.
 * **Web interface**  
-Duplicati comes with a web interface. It can be used to configure and run backups on your local machine. But is also allows you to configure and run backups remotely on headless machines like a Network Attached Storage (NAS). Just install Duplicati on your NAS and configure and run it through its web interface.
+Duplicati comes with a web interface. It can be used to configure and run backups on your local machine. But it also allows you to configure and run backups remotely on headless machines like a Network Attached Storage (NAS). Just install Duplicati on your NAS and configure and run it through its web interface.
 * **Command Line interface**  
 We did not forget about system admins! Duplicati offers all functions and feature via Duplicati.Commandline.exe. This allows you to add backup features to your scripts or run backups in a terminal window.
 * **Meta data**  
@@ -154,7 +154,7 @@ The size of these local databases varies, depending on the number of source file
 
 ## The backup process explained
 
-Traditional backup software makes a full backup at regular intervals (for example once a week). All other backups are incremental. These incremental backups send all new and changed files to the backup target. Backdraw is that if a folder needs to be restored from the most recent backup, the latest full backup has to be restored first, followed by all incremental backups that were made after the latest full backup. This is a cumbersome and error-sensitive procedure.
+Traditional backup software makes a full backup at regular intervals (for example once a week). All other backups are incremental. These incremental backups send all new and changed files to the backup target. The drawback is that if a folder needs to be restored from the most recent backup, the latest full backup has to be restored first, followed by all incremental backups that were made after the latest full backup. This is a cumbersome and error-sensitive procedure.
 
 Making a full backup every day results in reliable backups, but is very time consuming and resource-unfriendly. All source data has to be sent to and stored at the backup target every time the backup task is executed.
 
