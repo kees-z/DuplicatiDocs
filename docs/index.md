@@ -1,4 +1,4 @@
-﻿
+
 [//]: # (Homepage)
 
 # Duplicati User's Manual
@@ -6,7 +6,7 @@
 ![](duplicatilogo.png)
 
   
-2018/04/14  
+2018/04/19  
   
   
   
