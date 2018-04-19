@@ -1,6 +1,6 @@
 ## Duplicati components
 
-Before installing Duplicati, you should know how the different components relate to each other and how they can be configured. This makes it easier to decide how the software can be installed the way that is matches your needs. The main components are:
+Before installing Duplicati, you should know how the different components relate to each other and how they can be configured. This makes it easier to decide how the software can be installed the way that matches your needs. The main components are:
 
 * **The Server**  
 When the Duplicati server is started, Duplicati can perform tasks in the background, like making backups, do restore operations and perform maintenance tasks.  
@@ -189,7 +189,7 @@ Select which components you want to install. Pay special attention to _Launch Du
 ![](ss_installwindows_03.png)
 The Tray Icon tool will be installed, but not automatically started. You can start it manually by executing Duplicati.GUI.TrayIcon.exe.</span></span>
 * Keep _Launch Duplicati at startup_ enabled, but modify the properties of the shortcut after the installation wizard has been completed.  
-This will ease access to the Duplicati Web interface, but if you don't manually deactivate the internal server component, you will end up with multiple Duplicati instances, which is probably undesireable.
+This will ease access to the Duplicati Web interface, but if you don't manually deactivate the internal server component, you will end up with multiple Duplicati instances, which is probably undesirable.
 
 
 Click Next to proceed.  
