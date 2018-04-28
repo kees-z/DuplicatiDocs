@@ -159,7 +159,15 @@ yum install mono-devel
 
 
 *****
-![](icon_apple_begin.png) Download the latest Mono version from [http://www.mono-project.com/download/](http://www.mono-project.com/download/). Run the .pkg file and accept the terms of the license. ![](icon_apple_end.png)
+![](icon_apple_begin.png) Download the latest Mono version from [http://www.mono-project.com/download/](http://www.mono-project.com/download/). Run the .pkg file and accept the terms of the license.
+
+Alternatively, you can install Mono using Homebrew:
+
+```nohighlight
+brew install mono
+```
+
+![](icon_apple_end.png)
 
 *****
 
