@@ -38,7 +38,7 @@ For a real-world example, the list would be longer and would likely also have mu
 
 To store the information about what is in the backup, Duplicati relies on standard file formats, and uses the JSON data format and Zip compression.
 
-To store the file list, Duplicati creates a file named `duplicati-20161014090000.dlist.zip` locally, where the numbers represent the current date and time in the UTC timezone. Inside this zip archive is a single JSON file named `filelist.jso`n, which starts out by being an empty list, which is expressed in JSON as `[]`.
+To store the file list, Duplicati creates a file named `duplicati-20161014090000.dlist.zip` locally, where the numbers represent the current date and time in the UTC timezone. Inside this zip archive is a single JSON file named `filelist.json`, which starts out by being an empty list, which is expressed in JSON as `[]`.
 
 To store the data from files, Duplicati creates a file named `duplicati-7af781d3401eb90cd371.dblock.zip`, where the letters and numbers are chosen at random and have no relation to the data nor the current time. Initally this zip file is empty.
 
@@ -54,7 +54,7 @@ You can see an overview of the process here:
 
 ### Processing a folder
 
-When Duplicati recieves the first entry, `C:\data\`, it notices that the entry is a folder, and thus has no actual data, so it simply adds this entry to the `filelist.json` mentioned above, such that it now looks like:
+When Duplicati receives the first entry, `C:\data\`, it notices that the entry is a folder, and thus has no actual data, so it simply adds this entry to the `filelist.json` mentioned above, such that it now looks like:
 
 ```nohighlight
 [
@@ -65,15 +65,15 @@ When Duplicati recieves the first entry, `C:\data\`, it notices that the entry i
 ]
 ```
 
-In the actual implementaion, it also stores metadata, such as permissions, modification times, etc, but we will omit those details here.
+In the actual implementation, it also stores metadata, such as permissions, modification times, etc, but we will omit those details here.
 
 ### Processing a small file
 
-The next entry is `C:\data\mydoc.txt`, which is a file and thus has actual contents. Duplicati will read the file, a "block" at a time, which is 100kb. As the file is only 4kb, it all "fits" inside a single block. Once the block is read, Duplicati computes a SHA-256 hash value and encodes it as with Base64 encoding to get a string like `qaFXpxVTuYCuibb9P41VSeVn4pIaK8o3jUpJKqI4VF4=`. It then computes the SHA-256 value for the entire file and encodes it as Base64, but as the block and the file have the exact same contents (i.e. the whole file fits in a block), the value is the same: `qaFXpxVTuYCuibb9P41VSeVn4pIaK8o3jUpJKqI4VF4=`.
+The next entry is `C:\data\mydoc.txt`, which is a file and thus has actual contents. Duplicati will read the file, a "block at a time", which is 100kb. As the file is only 4kb, it all "fits" inside a single block. Once the block is read, Duplicati computes a SHA-256 hash for that block and encodes the hash in Base64 encoding to get a string like `qaFXpxVTuYCuibb9P41VSeVn4pIaK8o3jUpJKqI4VF4=`. It then computes the SHA-256 hash for the entire file and also encodes that hash as Base64, but as the block and the file have the exact same contents (because in this case the whole file fits in a block), the resulting hash is the same: `qaFXpxVTuYCuibb9P41VSeVn4pIaK8o3jUpJKqI4VF4=`.
 
-Note that no additional data is added to the hash. This is not required as the hash values are not visible after the zip volumes are encrypted, thus giving no hints for an attacker as to what the backup contains.
+Note that no additional [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)) is added to the hash. This is not required as the hash values are not visible after the zip volumes are encrypted, thus giving no hints for an attacker as to what the backup contains.
 
-The data from the file (the 4kb) are then added to the `dblock` file mentioned above, using the string as the filename. This means that the `dblock` zip file contents are now:
+The contents of the mydoc.txt file (the 4kb) are then added to the `dblock` file mentioned above, using the string as the filename. This means that the `dblock` zip file contents are now:
 
 ```nohighlight
 qaFXpxVTuYCuibb9P41VSeVn4pIaK8o3jUpJKqI4VF4= (4kb)
