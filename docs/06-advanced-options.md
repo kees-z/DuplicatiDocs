@@ -79,6 +79,27 @@ This property can be used to point to a text file where each line contains a fil
 `--compression-module = zip`  
 Duplicati supports pluggable compression modules. Use this option to select a module to use for compression. This is only applied when creating new volumes, when reading an existing file, the filename is used to select the compression module.
 
+### concurrency-block-hashers
+`--concurrency-block-hashers = 2`  
+Use this option to set the number of processes that perform hashing of data.
+
+### concurrency-compressors
+`--concurrency-compressors = 2`  
+Use this option to set the number of processes that perform compression of output data.
+
+### concurrency-max-threads
+`--concurrency-max-threads = 0`  
+Use this option to set the maximum number of threads used. Setting this value to zero or less will dynamically balance the number of active threads to fit the hardware.
+
+### console-log-filter
+`--console-log-filter`  
+This option accepts filters that removes or includes messages regardless of their log level. Multiple filters are supported by separating with :`.`
+Filters are matched against the log tag and assumed to be including, unless they start with `-`. Regular expressions are supported within hard braces. Example: `+Path*:+*Mail*:-[.*DNS]`
+
+### console-log-level
+`--console-log-level = Warning`  
+Console information level
+
 ### control-files
 `--control-files = false`  
 Use control files.
@@ -118,6 +139,10 @@ This option can be used to reduce the memory footprint by not keeping paths and 
 ### disable-filetime-check
 `--disable-filetime-check = false`  
 The operating system keeps track of the last time a file was written. Using this information, Duplicati can quickly determine if the file has been modified. If some application deliberately modifies this information, Duplicati won't work correctly unless this flag is set.
+
+### disable-on-battery
+`--disable-on-battery = false`  
+When this flag is enabled, a scheduled backup will not run if the system is detected to be running on battery power (manual or command line backups will still be run).  If the detected power source is mains (i.e., AC) or unknown, then scheduled backups will proceed as normal.
 
 ### disable-module
 `--disable-module`  
@@ -163,6 +188,10 @@ Duplicati supports pluggable encryption modules. Use this option to select a mod
 `--exclude`  
 Exclude files that match this filter. The special characterc `*` means any number of character, and the special character `?` means any single character, use `*.txt` to exclude all files with a txt extension. Regular expressions are also supported and can be supplied by using hard braces, i.e. `[.*\.txt]`.
 
+### exclude-empty-folders
+`--exclude-empty-folders = false`  
+Use this option to remove all empty folders from a backup.
+
 ### exclude-files-attributes
 `--exclude-files-attributes`  
 Use this option to exclude files with certain attributes. Use a comma separated list of attribute names to specify more than one. Possible values are: `ReadOnly`, `Hidden`, `System`, `Directory`, `Archive`, `Device`, `Normal`, `Temporary`, `SparseFile`, `ReparsePoint`, `Compressed`, `Offline`, `NotContentIndexed`, `Encrypted`, `IntegrityStream`, `NoScrubData`.
@@ -194,6 +223,10 @@ Use this option to increase the amount of output generated as the result of the 
 ### hardlink-policy
 `--hardlink-policy = All`  
 Use this option to handle hardlinks (only works on Linux/OSX). The `first` option will record a hardlink ID for each hardlink to avoid storing hardlinked paths multiple times. The option `all` will ignore hardlink information, and treat each hardlink as a unique path. The option `none` will ignore all hardlinks with more than one link.
+
+### ignore-filenames
+`--ignore-filenames`  
+Use this option to set a filename, or list of filenames, that indicate exclusion of a folder which contains it. A common use would be to have a file named something like ".nobackup" and place this file into folders that should not be backed up.
 
 ### include
 `--include`  
@@ -231,6 +264,15 @@ Verify uploads by listing contents.
 ### log-file
 `--log-file`  
 Log internal information.
+
+### log-file-log-filter
+`--log-file-log-filter`  
+This option accepts filters that removes or includes messages regardless of their log level. Multiple filters are supported by separating with :.
+Filters are matched against the log tag and assumed to be including, unless they start with `-`. Regular expressions are supported within hard braces. Example: `+Path*:+*Mail*:-[.*DNS]`
+
+### log-file-log-level
+`--log-file-log-level = Warning`  
+Log file information level
 
 ### log-level
 `--log-level = Warning`  
@@ -308,6 +350,10 @@ By default, files will be restored in the source folders, use this option to res
 `--restore-permissions = false`  
 By default permissions are not restored as they might prevent you from accessing your files. Use this option to restore the permissions as well.
 
+### restore-symlink-metadata
+`--restore-symlink-metadata = false`  
+If symlink metadata is applied, it will usually mean changing the symlink target, instead of the symlink itself. For this reason, metadata is notapplied to symlinks, but this option can be used to override this, suchthat metadata is applied to symlinks as well.
+
 ### retention-policy
 `--retention-policy`  
 Use this option to reduce the number of versions that are kept with increasing version age by deleting most of the old backups. The expected format is a comma separated list of colon separated time frame and interval pairs. For example the value `7D:0s,3M:1D,10Y:2M` means "For 7 day keep all backups, for 3 months keep one backup per day and for 10 years one backup every 2nd month.
@@ -383,6 +429,10 @@ By setting this value you can limit how much bandwidth Duplicati consumes for up
 `--time = now`  
 By default, Duplicati will list and restore files from the most recent backup, use this option to select another item. You may use relative times, like "-2M" for a backup from two months ago.
 
+### unittest-mode
+`--unittest-mode = false`  
+When running in unittest mode, no automatic fixes are applied, which assumes that the input data is always in perfect shape. This option is not intended for use in daily backups, but required for testing purposes to reveal potential problems.
+
 ### upload-unchanged-backups
 `--upload-unchanged-backups = false`  
 If no files have changed, Duplicati will not upload a backup set. If the backup data is used to verify that a backup was executed, this option will make Duplicati upload a backupset even if it is empty.
@@ -390,6 +440,10 @@ If no files have changed, Duplicati will not upload a backup set. If the backup 
 ### upload-verification-file
 `--upload-verification-file = false`  
 Use this option to upload a verification file after changing the remote storage. The file is not encrypted and contains the size and SHA256 hashes of all the remote files and can be used to verify the integrity of the files.
+
+###   use-background-io-priority
+`--use-background-io-priority = false`  
+This option instructions the operating system to set the current process to use the lowest IO priority level, which can make operations run slower but will interfere less with other operations running at the same time.
 
 ### use-block-cache
 `--use-block-cache = false`  
