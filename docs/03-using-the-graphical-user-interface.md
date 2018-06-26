@@ -317,7 +317,7 @@ If Duplicati isn't installed on the computer you want to restore to, download an
 To start a restore operation without a configured backup job, click Restore in the main menu. You have 2 options:
 
 * If you have exported the backup configuration earlier to a file and still have access to this file, you can import it and start restoring. This is the easiest option.
-* If you don?t have an exported configuration file, you need to know the backend URL, credentials and the backup passphrase. Once entered all needed information, you can start restoring your files.
+* If you don't have an exported configuration file, you need to know the backend URL, credentials and the backup passphrase. Once entered all needed information, you can start restoring your files.
 
 If you don't have a configuration file, you have to supply all needed information yourself. Select _Direct restore from backup files ..._ and click _Next_.
 
