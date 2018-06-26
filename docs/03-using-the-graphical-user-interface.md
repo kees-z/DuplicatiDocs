@@ -554,7 +554,7 @@ The backup job is removed from your Duplicati installation.
 
 Duplicati makes use of a local database for each backup job that contains information about what is stored at the backend. Main reasons for storing this information locally are performance and reduction of bandwidth usage. Without this database, Duplicati would need to download a fair amount of data from the backend for any operation.
 
-![](icon_important.png) If a local database is available, it will be used during restore operations. However, the database is not required. In disaster recovery scenarios where the computer holding the source files is lost, a local database is not available. Requiring this database would make the backup file useless, so Duplicati is designed such that the local database can be rebuilt if it isn?t available.
+![](icon_important.png) If a local database is available, it will be used during restore operations. However, the database is not required. In disaster recovery scenarios where the computer holding the source files is lost, a local database is not available. Requiring this database would make the backup file useless, so Duplicati is designed such that the local database can be rebuilt if it isn't available.
 
 If something happens to the local database, some maintenance tasks can be performed. During a backup operation, Duplicati could find some inconsistencies in the database and will request to do a database repair. You can perform maintenance tasks to the database by clicking the backup name and click _Database ..._ under _Advanced_.
 
