@@ -711,7 +711,7 @@ Click to check the _Password_ checkbox to secure the web interface with a passwo
 When enabled, _Allow remote access_ allows access to the web interface from other hosts in the network.
 
 *****
-> ![](icon_info.png) If you are using a firewall, don?t forget to make an access rule in your firewall to allow incoming traffic using the port the Duplicati sever listens on (default port is TCP port 8200).
+> ![](icon_info.png) If you are using a firewall, don't forget to make an access rule in your firewall to allow incoming traffic using the port the Duplicati sever listens on (default port is TCP port 8200).
 
 *****
 
