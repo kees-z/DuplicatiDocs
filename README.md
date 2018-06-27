@@ -1,2 +1,2 @@
 # DuplicatiDocs
-Duplicati User's Manual
+Duplicati 2 User's Manual
