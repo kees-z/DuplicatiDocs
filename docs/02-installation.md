@@ -233,7 +233,7 @@ The first time the server component starts, Windows Firewall (or another third p
 
 If you have chosen _Launch Duplicati at startup_, but don't want to use the internal server component of the Tray Icon tool, you have to edit the properties of the Duplicati shortcut in the Windows Startup folder. You can find this shortcut in `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`
 
-Browse to this folder and edit the properties of the Duplicati 2 shortcut. Add  `--no-hosted-server` to the Target field.  
+Browse to this folder and edit the properties of the Duplicati 2 shortcut. Add space and after `--no-hosted-server` to the Target field. So the end of the line should look like `Duplicati.GUI.TrayIcon.exe" --no-hosted-server`
 
 ![](ss_conftrayicon_01.png)
 
