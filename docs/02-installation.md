@@ -194,7 +194,9 @@ Read the license agreement. If you agree, select _I accept the terms in the Lice
 Select which components you want to install. Pay special attention to _Launch Duplicati at startup_. If it is selected, the Duplicati Tray Icon Tool will be started automatically after logging on to Windows. The Duplicati Server component is included in the Tray Icon tool. If you want to start the server component another way (i.e. by registering the server component as a Windows service), you have 2 options:
 
 * Disable _Launch Duplicati at startup_.  
+
 ![](ss_installwindows_03.png)
+
 The Tray Icon tool will be installed, but not automatically started. You can start it manually by executing Duplicati.GUI.TrayIcon.exe.</span></span>
 * Keep _Launch Duplicati at startup_ enabled, but modify the properties of the shortcut after the installation wizard has been completed.  
 This will ease access to the Duplicati Web interface, but if you don't manually deactivate the internal server component, you will end up with multiple Duplicati instances, which is probably undesirable.
