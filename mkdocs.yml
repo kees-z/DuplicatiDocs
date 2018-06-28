@@ -7,8 +7,8 @@ site_author: 'K. Zaaijer'
 site_url: 'https://www.duplicati.com/'
 
 # Repository
-repo_name: 'squidfunk/mkdocs-material'
-repo_url: 'https://github.com/squidfunk/mkdocs-material'
+repo_name: 'kees-z/DuplicatiDocs'
+repo_url: 'https://github.com/kees-z/DuplicatiDocs/'
 
 # Copyright
 copyright: 'Copyright &copy; 2016 - 2018 The Duplicati Team'
