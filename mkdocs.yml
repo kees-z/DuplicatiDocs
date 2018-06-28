@@ -41,10 +41,8 @@ extra:
       link: 'https://plus.google.com/105271984558189185842'
     - type: 'facebook'
       link: 'http://www.facebook.com/pages/Duplicati/105118456272281'
-    - type: 'btc'
-      link: 'bitcoin:1Lfzs4EQBtjqQyARfxW1vH5JMRaz7tVCir'
-    - type: 'paypal'
-      link: 'https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=paypal%40hexad%2edk&item_name=Duplicati%20Donation&no_shipping=2&no_note=1&tax=0&currency_code=EUR&bn=PP%2dDonationsBF&charset=UTF%2d8&lc=US'
+    - type: 'donate'
+      link: 'https://www.duplicati.com/donate'
 
 
 # Google Analytics
