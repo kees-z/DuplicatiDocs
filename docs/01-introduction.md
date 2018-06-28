@@ -45,7 +45,7 @@ Duplicati can be installed on a variety of operating systems. Most common platfo
 Duplicati is not:
 
 * **A file synchronization program.**  
-Duplicati is a block based backup solution. Files are split up in small chunks of data, (optionally) encrypted and compressed before they are sent to the backup destination. The block based backup engine enables great features like versioning and deduplication, but disallows uploading of plain files. If you need to be able to access your files directly from the target location, you will need file synchronization software, not block based backup software like Duplicati.
+Duplicati is a block based backup solution. Files are split up in small chunks of data (blocks),  which are optionally encrypted and compressed before they are sent to the backup location. In backup location, Duplicati uploads not original files but files that contain blocks of original files and other necessary data that allows Duplicati to restore stored files to its original form by restoration process. This block based backup system allows features like file versioning and deduplication. If you need to be able to access your files directly from the backup location, you will need file synchronization software, not block based backup software like Duplicati.
 * **A hard disk imaging program.**  
 Duplicati can make a backup of selected files and folders. Hard disk imaging software can create an image file of a complete volume or hard disk, including the boot sector. If you want to be able to restore a complete volume or hard disk, including the boot sector and operating system, you need a hard disk imaging solution.
 * **Software that can make a backup of files that are stored in the cloud.**  
