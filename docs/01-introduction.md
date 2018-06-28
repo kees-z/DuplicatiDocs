@@ -53,7 +53,7 @@ Duplicati needs to be installed on the host where the backup source files are st
 
 ## Features
 
-Duplicati has a lot of advanced features that can only be found in high-end enterprise backup solutions. Duplicati offers these features for free:
+Duplicati is a free and open source software that has many advanced features that can only be found in high-end enterprise backup solutions. Some of those features are:
 
 * **Strong encryption**  
 Duplicati uses strong AES-256 encryption to protect your backups. It is designed following the TNO principle: Trust No One. For instance, all data is encrypted locally before it is transferred to the remote storage system. The password/key to your backup never leaves your computer. Instead of AES-256 you can use a local GPG instance to encrypt your backup.
