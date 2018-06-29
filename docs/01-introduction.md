@@ -48,8 +48,8 @@ Duplicati is **not**:
 Duplicati is a block based backup solution. Files are split up in small chunks of data (blocks),  which are optionally encrypted and compressed before they are sent to the backup location. In backup location, Duplicati uploads not original files but files that contain blocks of original files and other necessary data that allows Duplicati to restore stored files to its original form by restoration process. This block based backup system allows features like file versioning and deduplication. If you need to be able to access your files directly from the backup location, you will need file synchronization software, not block based backup software like Duplicati.
 * **A hard disk image backup software.**  
 Duplicati can make a backup of selected files and folders. Hard disk imaging software can create an image file of a complete volume or hard disk, including the boot sector. If you want to be able to restore a complete volume or hard disk, including the boot sector and operating system, you need a hard disk imaging solution.
-* **Software that can make a backup of files that are stored in the cloud.**  
-Duplicati needs to be installed on the host where the backup source files are stored. Optionally files and folders on locations in the local network can be selected for backup by using UNC paths. Duplicati can not log into cloud services over the internet to make a backup of remotely stored files.</span>
+* **A Backup software for the files that are located in the cloud.**  
+Duplicati can not make a backup of remotely stored files. Duplicati needs to be installed on the host where source files for the backup are located. Optionally files and folders on locations in the local network can be selected for backup by using UNC paths.</span>
 
 ## Features
 
