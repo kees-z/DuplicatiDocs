@@ -8,7 +8,7 @@ With the Commandline tool you can perform all operations that are available in t
 
 ## How to use the Duplicati Command Line tool
 
-The Commandline tool can be used by typing `Duplicati.CommandLine.exe` followed by a number of arguments in a command prompt window. Linux and Mac OS X users should type `mono Duplicati.CommandLine.exe` or `duplicate-cli`, which is a wrapper for running `mono Duplicati.CommandLine.exe`.
+The Commandline tool can be used by typing `Duplicati.CommandLine.exe` followed by a number of arguments in a command prompt window. Linux and Mac OS X users should type `mono Duplicati.CommandLine.exe` or `duplicati-cli`, which is a wrapper for running `mono Duplicati.CommandLine.exe`.
 
 Which arguments you need to specify depend on the command you run with the Commandline tool. Generally, these arguments need to be supplied:
 
