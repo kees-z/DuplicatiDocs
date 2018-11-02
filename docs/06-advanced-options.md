@@ -490,7 +490,7 @@ Default value: `false`
 ### accept-specified-ssl-hash
 `--accept-specified-ssl-hash (String)`  
 Optionally accept a known SSL certificate.  
-If your server certificate is reported as invalid (eg. with self-signed certificates), you can supply the certificate hash to approve it anyway. The hash value must be entered in hex format without spaces. You can enter multiple hashes separated by commas.
+If your server certificate is reported as invalid (eg. with self-signed certificates), you can supply the certificate hash (SHA256) to approve it anyway. The hash value must be entered in hex format without spaces or colons. You can enter multiple hashes separated by commas.
 
 ### accept-any-ssl-certificate
 `--accept-any-ssl-certificate (Boolean)`  
