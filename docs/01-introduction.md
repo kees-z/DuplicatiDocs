@@ -116,9 +116,10 @@ The following Cloud Storage Providers are supported natively by Duplicati:
 * Jottacloud
 * Mega.nz
 * Microsoft Office 365 Groups
-* Microsoft OneDrive
 * Microsoft OneDrive for Business
+* Microsoft OneDrive v2
 * Microsoft SharePoint
+* Microsoft SharePoint v2
 * OpenStack Simple Storage
 * Rackspace CloudFiles
 * Rclone
