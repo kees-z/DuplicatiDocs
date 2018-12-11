@@ -140,7 +140,7 @@ Duplicati must be installed on a device with a supported operating system. Curre
 
 Because many devices run on an operating system based on Linux, Duplicati can be installed on some devices that are not personal computers, like a NAS or Raspberry Pi.
 
-Windows-based devices should have .NET Framework 3.5 or higher installed. For Linux and OSX, a recent version of Mono is a requirement.
+Windows-based devices should have .NET Framework 4.5 or higher installed. For Linux and OSX, a recent version of Mono is a requirement.
 
 Duplicati can make backups of files that are opened by other processes. For Windows, a snapshot of the file system is created using Volume Shadowcopy Services (VSS), LVM is used on Linux Systems. To be able to create a VSS snapshot, Duplicati needs C++ run-time components for Visual Studio 2015 to be installed and must be run with administrator privileges.
 
