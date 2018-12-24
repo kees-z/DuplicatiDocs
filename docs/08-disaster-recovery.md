@@ -6,7 +6,7 @@ This chapter describes how to recover from a disaster. Before we continue, we fi
 * Loss or corruption of source files or the complete source system.
 * Missing or corrupted backup files.
 
-How to restore files to the original location of the same system and how to restore files from a consistent backup to a new computer is described in [Restoring files from a backup](/03-using-the-graphical-user-interface/#restoring-files-from-a-backup) and [Restoring files if your Duplicati installation is lost](/03-using-the-graphical-user-interface/#restoring-files-if-your-duplicati-installation-is-lost).
+How to restore files to the original location of the same system and how to restore files from a consistent backup to a new computer is described in [Restoring files from a backup](/03-using-the-graphical-user-interface/#restoring-files-from-a-backup) and [Restoring files if your Duplicati installation is lost](03-using-the-graphical-user-interface/#restoring-files-if-your-duplicati-installation-is-lost).
 
 This chapter describes the process of restoring as much as possible from a backup that is inconsistent due to corrupted or missing files at the backend, without access to the source files and the Duplicati setup.
 
