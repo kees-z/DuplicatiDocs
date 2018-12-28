@@ -447,7 +447,7 @@ This option instructions the operating system to set the current process to use 
 
 ### use-block-cache
 `--use-block-cache = false`  
-Store an in-memory block cache.
+Store an in-memory copy of the block table. This potentially reduces lookup time during backup as it limits the number of times the database must be accessed when examining blocks.
 
 ### usn-policy
 `--usn-policy = off`  
