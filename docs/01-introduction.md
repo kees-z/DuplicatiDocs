@@ -82,7 +82,7 @@ When a file is in use by a process or application, it usually cannot be read by 
 
 ## License
 
-Duplicati is licensed under LGPL and available for Windows and Linux. The software is open source and free to use, even commercially. More information about the LGPL licensing model can be found in [License Agreement](appendix-f-license-agreement).
+Duplicati is licensed under LGPL and available for Windows and Linux. The software is open source and free to use, even commercially. More information about the LGPL licensing model can be found in [License Agreement](../appendix-f-license-agreement).
 
 ## Supported backends
 
