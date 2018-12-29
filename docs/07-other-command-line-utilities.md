@@ -107,7 +107,7 @@ Installs the service as a local user.
 It is possible to pass arguments to `Duplicati.Server.exe`, simply add them to the commandline:  
 `Duplicati.WindowsService.exe install --webservice-interface=loopback --log-retention=3M`
 
-See [Duplicati.Server.exe](07-other-command-line-utilities/#duplicatiserverexe) for more information about supported command line options.
+See [Duplicati.Server.exe](../07-other-command-line-utilities/#duplicatiserverexe) for more information about supported command line options.
 
 ## Duplicati.CommandLine.BackendTester.exe
 
