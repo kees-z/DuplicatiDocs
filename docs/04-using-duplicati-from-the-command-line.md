@@ -19,11 +19,11 @@ This tells the Commandline tool what to do. Supported commands will be described
 If the command needs access to the files at the backend, you need to specify the protocol, URL and credentials as the first argument.  
 Example: to access host.myftpserver.com/backup with username User and password Pass, using the FTP protocol, the target URL will be:  
 `ftp://User:Pass@host.myftpserver.com`  
-Each storage provider has its own set of required and optional parameters. See [Storage Providers](05-storage-providers) for more info about specific backends.
+Each storage provider has its own set of required and optional parameters. See [Storage Providers](../05-storage-providers) for more info about specific backends.
 * **Command arguments**  
 Some commands need additional information. For example, if you want to compare 2 backups, you have to specify which 2 backups from the available list Duplicati should compare.
 * **Advanced options**  
-Duplicati offers a wide range of advanced options. With advanced options you give Duplicati additional information, like the location of the local database, where to store temporary files or information to fine-tune the command you want to execute. There are general advanced options and advanced options for specific storage providers. See< [Storage Providers](05-storage-providers) and [Advanced options](06-advanced-options) for more information.
+Duplicati offers a wide range of advanced options. With advanced options you give Duplicati additional information, like the location of the local database, where to store temporary files or information to fine-tune the command you want to execute. There are general advanced options and advanced options for specific storage providers. See< [Storage Providers](../05-storage-providers) and [Advanced options](../06-advanced-options) for more information.
 
 Generally, each operation from the command line has the following format:
 
@@ -74,11 +74,11 @@ Multiple source paths can be specified if they are separated by a space.
 Add as many advanced options as needed, like `--passphrase` and `--dblock-size`.
 
 *****
-> ![](icon_info.png) Instead of composing the complete backup command yourself, including all advanced options, you can create a backup job in the Graphical User Interface, without scheduling it. Once completed, you can export the backup job to the command line, resulting in a Duplicati.CommandLine.exe backup command with all settings that you specified in the wizard. You can paste this generated command in your favorite task scheduler. For more information about creating a backup job in the Graphical User Interface, see [Creating a new backup job](03-using-the-graphical-user-interface/#creating-a-new-backup-job). For more information about exporting the backup job to the command line, see [Exporting a backup job configuration](03-using-the-graphical-user-interface/#exporting-a-backup-job-configuration).
+> ![](icon_info.png) Instead of composing the complete backup command yourself, including all advanced options, you can create a backup job in the Graphical User Interface, without scheduling it. Once completed, you can export the backup job to the command line, resulting in a Duplicati.CommandLine.exe backup command with all settings that you specified in the wizard. You can paste this generated command in your favorite task scheduler. For more information about creating a backup job in the Graphical User Interface, see [Creating a new backup job](../03-using-the-graphical-user-interface/#creating-a-new-backup-job). For more information about exporting the backup job to the command line, see [Exporting a backup job configuration](../03-using-the-graphical-user-interface/#exporting-a-backup-job-configuration).
 
 *****
 
-The Commandline equivalent of the backup job described in [Creating a new backup job](03-using-the-graphical-user-interface/#creating-a-new-backup-job) is:
+The Commandline equivalent of the backup job described in [Creating a new backup job](../03-using-the-graphical-user-interface/#creating-a-new-backup-job) is:
 
 ```nohighlight
 Duplicati.CommandLine.exe backup "ftp://myftpserver.com/Backup/Pictures?auth-username=Duplicati&auth-password=backup" "C:\Users\User\Pictures" --backup-name="Pictures Collection" --dbpath="C:\Users\User\DuplicatiCanary\data\LFYXSFKFFN.sqlite" --encryption-module="aes" --compression-module="zip" --dblock-size="50mb" --keep-time="3M" --passphrase="%@/%78kUPKlZtz" --skip-files-larger-than="2GB" --default-filters="Windows" --exclude-files-attributes="temporary" --disable-module="console-password-input" --exclude="desktop.ini"
