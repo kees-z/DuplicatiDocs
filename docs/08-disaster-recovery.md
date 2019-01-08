@@ -10,7 +10,7 @@ How to restore files to the original location of the same system and how to rest
 
 This chapter describes the process of restoring as much as possible from a backup that is inconsistent due to corrupted or missing files at the backend, without access to the source files and the Duplicati setup.
 
-Usually you can install Duplicati on any computer and point to the location that contains your backup to restore files. Duplicati will try to automatically recover from problems it finds, but is there is significant damage in your backup files, the restore process may fail, resulting in aborting the restore operation, leaving files unrecovered that are potentially restorable. In this situation you can use the `Duplicati.CommandLine.RecoveryTool.exe` to restore files that are not affected by the backup corruption. You can use this tool to perform the operations manually that are normally done automatically by the standard tools.
+Usually you can install Duplicati on any computer and point to the location that contains your backup to restore files. Duplicati will try to automatically recover from problems it finds, but if there is significant damage in your backup files, the restore process may fail, resulting in aborting the restore operation, leaving files unrecovered that are potentially restorable. In this situation you can use the `Duplicati.CommandLine.RecoveryTool.exe` to restore files that are not affected by the backup corruption. You can use this tool to perform the operations manually that are normally done automatically by the standard tools.
 
 ## Test scenario
 
