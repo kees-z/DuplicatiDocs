@@ -31,7 +31,7 @@ Generally, each operation from the command line has the following format:
 `Duplicati.CommandLine.exe <command> [storage-URL] [arguments] [advanced-options]`
 
 **For Linux and Mac OS X:**  
-`duplicate-cli <command> [storage-URL] [arguments] [advanced-options]`
+`duplicati-cli <command> [storage-URL] [arguments] [advanced-options]`
 
 Storage-URL, arguments and advanced-options may or may not be mandatory, depending on the command you execute.
 
