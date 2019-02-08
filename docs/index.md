@@ -13,7 +13,7 @@
   
   
   
-Copyright © 2018 by The Duplicati Team.  
+Copyright © 2018-2019 by The Duplicati Team.  
 
 The information in this document is subject to change without notice. Although every precaution has been taken in the preparation of this book, The Duplicati Team assumes no responsibility for errors and omissions. Nor is any liability assumed for damages resulting from the information contained herein. 
 
