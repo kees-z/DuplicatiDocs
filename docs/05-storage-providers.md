@@ -249,6 +249,30 @@ Use this option to manage the internal timeout for SSH operations. If this optio
 * `--ssh-keepalive = 0`  
 This option can be used to enable the keep-alive interval for the SSH connection. If the connection is idle, aggressive firewalls might close the connection. Using keep-alive will keep the connection open in this scenario. If this value is set to zero, the keep-alive is disabled.
 
+## WebDAV
+
+Duplicati can use WebDAV servers to store backups. The following target URL formats can be used:
+
+`webdav://hostname/folder`
+
+Supported options:
+
+* `--auth-password`  
+The password used to connect to the server. This may also be supplied as the environment variable "AUTH_PASSWORD".  
+* `--auth-username`  
+The username used to connect to the server. This may also be supplied as the environment variable "AUTH_USERNAME".  
+* `--azure_blob_container_name (String)`  
+The name of the storage container.  
+All files will be written to the container specified.
+* `--integrated-authentication`  
+If the server and client both supports integrated authentication, this option enables that authentication method. This is likely only available with windows servers and clients.  
+* `--force-digest-authentication`  
+Using the HTTP Digest authentication method allows the user to authenticate with the server, without sending the password in clear. However, a man-in-the-middle attack is easy, because the HTTP protocol specifies a fallback to Basic authentication, which will make the client send the password to the attacker. Using this flag, the client does not accept this, and always uses Digest authentication or fails to connect.  
+* `--use-ssl`  
+Use this flag to communicate using Secure Socket Layer (SSL) over http (https).  
+* `--debug-propfind-file`
+To aid in debugging issues, it is possible to set a path to a file that will be overwritten with the PROPFIND response  
+
 ## Amazon Cloud Drive
 
 This backend can read and write data to Amazon Cloud Drive. Supported format is
