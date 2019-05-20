@@ -5,7 +5,7 @@ Before installing Duplicati, you should know how the different components relate
 * **The Server**  
 When the Duplicati server is started, Duplicati can perform tasks in the background, like making backups, do restore operations and perform maintenance tasks.  
 The server part has a built-in scheduler to start backup jobs automatically at regular intervals.  
-For configuring new, of modifying existing backup jobs, change settings en monitoring running backups, a web server is included in the server component.  
+For configuring new (or modifying existing) backup jobs, changing settings, and monitoring running backups, a web server is included in the server component.  
 If the server component starts, the webservice listens on the loopback interface, making it reachable from the local host only. The server tries to start listening on TCP port 8200\. If this port is unavailable (because of another running Duplicati server instance or another process that uses port 8200), port 8300 will be tried, increasing until an unused port is found. Port and interface can be customized by specifying some command line parameters.
 * **The Command Line tools**  
 Duplicati can make backups without loading the server component, using the command line tools. To schedule backups without using the server component, almost all task schedulers can be used, for example the Windows Task Scheduler (Windows) or Cron (Linux).  
@@ -15,7 +15,7 @@ When started, the Duplicati Tray icon tool creates a small icon in the System Tr
 * **The Service**  
 Basically this is the same as the Duplicati Server component, but running as a Windows service. If Duplicati is registered as a Windows service, a small agent starts the server component and pings the server to verify it is running. If the server component is unreachable, the agent will restart it.
 
-When a backup is made, Duplicati has the same permissions to the file system as the user context it is running in. If Duplicati is started with the Tray Icon tool, or if a user starts the Server component, or the command line tools are used, a backup can be made from all files that the user has read access to. Probably personal documents of other users that log on the same computer cannot be backed up by this instance.
+When a backup is made, Duplicati has the same permissions to the file system as the user context it is running in. If Duplicati is started with the Tray Icon tool, a user starts the Server component, or the command line tools are used, a backup can be made from all files that the user has read access to. Probably personal documents of other users that log on the same computer cannot be backed up by this instance.
 
 However, other users can run their own Duplicati server instance (using different port numbers for the web server), which will give them access to their own personal files. The settings and backup configurations are stored at separate locations, so all users will see their own Duplicati environment.
 
