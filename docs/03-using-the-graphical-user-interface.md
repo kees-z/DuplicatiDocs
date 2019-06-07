@@ -19,7 +19,7 @@ If you don't use the tray icon (for example if you disabled _Launch Duplicati at
 
 The default url is http://localhost:8200
 
-This can be changed by providing command line options to Duplicati.Server.exe or Duplicati.GUI.TrayIcon.exe. See [Duplicati.GUI.TrayIcon.exe](../07-other-command-line-utilities/#duplicatiguitrayiconexe), [Duplicati.Server.exe](../07-other-command-line-utilities/#duplicatiserverexe) and [Duplicati.WinowsService.exe](../07-other-command-line-utilities/#duplicatiwindowsserviceexe) for more information.
+This can be changed by providing command line options to Duplicati.Server.exe or Duplicati.GUI.TrayIcon.exe. See [Duplicati.GUI.TrayIcon.exe](../07-other-command-line-utilities/#duplicatiguitrayiconexe), [Duplicati.Server.exe](../07-other-command-line-utilities/#duplicatiserverexe) and [Duplicati.WindowsService.exe](../07-other-command-line-utilities/#duplicatiwindowsserviceexe) for more information.
 
 The first time you start the Duplicati Web interface, this message is presented:  
 ![](ss_usinggui_01.png)
