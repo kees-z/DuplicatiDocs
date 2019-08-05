@@ -591,9 +591,9 @@ If any errors or warnings occur, they will be displayed in a popup at the bottom
 
 After each backup operation, old backups are marked for removal. Which backups are considered old, can be configured in the Add backup wizard in Step 5\. Under General options you can specify how many backups you want to keep, or after how many days backups can be deleted.
 
-Upload volumes (files at the backend) likely contain blocks that do belong old backups only, as well as blocks that are used by newer backups. Because the contents of these volumes are partly needed, they cannot be deleted, resulting in unnecessary allocated storage capacity.
+Upload volumes (files at the backend) likely contain blocks that do belong to old backups only, as well as blocks that are used by newer backups. Because the contents of these volumes are partly needed, they cannot be deleted, resulting in unnecessary allocated storage capacity.
 
-The compacting process takes care of this. When a predefined percentage of a volume is used by obsolete backups, the volume is downloaded, old blocks are removed and bocks that are still in use are recompressed an re-encrypted. The smaller volume without obsolete contents is uploaded and the original volume is deleted, freeing up storage capacity at the backend.
+The compacting process takes care of this. When a predefined percentage of a volume is used by obsolete backups, the volume is downloaded, old blocks are removed and blocks that are still in use are recompressed and re-encrypted. The smaller volume without obsolete contents is uploaded and the original volume is deleted, freeing up storage capacity at the backend.
 
 Compacting can result in a lot of small volumes at the backend. If enough small files exist that can be combined to one or more volumes of the defined volume size (default 50 MB), these small volumes are downloaded, repackaged and uploaded to the backend, replacing these small files.
 
