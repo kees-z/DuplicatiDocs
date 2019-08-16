@@ -40,7 +40,7 @@ When performing asynchronous uploads, Duplicati will create volumes that can be 
 If a backup is interrupted there will likely be partial files present on the backend. Using this flag, Duplicati will automatically remove such files when encountered.
 
 ### auto-compact-interval
-`--auto-compact-interval = 0m`
+`--auto-compact-interval = 0m`  
 The minimum amount of time that must elapse after the last compaction before another will be automatically triggered at the end of a backup job. Automatic compaction can be a long-running process and may not be desirable to run after every single backup.
 
 ### auto-update
@@ -52,7 +52,7 @@ Set this option if you prefer to have the commandline version automatically upda
 Some operations that manipulate the local database leave unused entries behind. These entries are not deleted from a hard drive until a VACUUM operation is run. This operation saves disk space in the long run but needs to temporarily create a copy of all valid entries in the database. Setting this to true will allow Duplicati to perform VACUUM operations at its discretion.
 
 ### auto-vacuum-interval
-`--auto-vacuum-interval = 0m`
+`--auto-vacuum-interval = 0m`  
 The minimum amount of time that must elapse after the last vacuum before another will be automatically triggered at the end of a backup job. Automatic vacuum can be a long-running process and may not be desirable to run after every single backup.
 
 ### backup-name
