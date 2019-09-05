@@ -32,7 +32,7 @@ Registering Duplicati as a service could also be a solution if you want to make 
 ## Prerequisites
 
 *****
-![](icon_windows_begin.png) Duplicati depends on other software. For Windows, Microsoft .NET Framework 4.5 or higher needs to be installed. Linux and Mac OS X require Mono to be installed.
+![](icon_windows_begin.png) Duplicati depends on other software. For Windows, Microsoft .NET Framework 4.6.2 or higher needs to be installed. Linux and Mac OS X require Mono to be installed.
 
 If your system has no or an outdated version of the .NET Framework, download the latest version from [https://www.microsoft.com/net/download/framework](https://www.microsoft.com/net/download/framework) and install it.
 
