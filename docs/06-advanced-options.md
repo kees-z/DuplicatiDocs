@@ -405,7 +405,7 @@ Stores metadata, such as file timestamps and attributes. This increases the requ
 
 ### symlink-policy
 `--symlink-policy = Store`  
-Use this option to handle symlinks differently. The `store` option will simply record a symlink with its name and destination, and a restore will recreate the symlink as a link. Use the option `ignore` to ignore all symlinks and not store any information about them. Previous versions of Duplicati used the setting `follow`, which will cause symlinked files to be included and restore as normal files.
+Use this option to handle symlinks differently. The `store` option will simply record a symlink with its name and destination, and a restore will recreate the symlink as a link. Use the option `ignore` to ignore all symlinks and not store any information about them. The option `follow` will cause the symlinked target to be backed up and restored as a normal file with the symlink name. Early versions of Duplicati did not support this option and bevhaved as if `follow` was specified.
 
 ### synchronous-upload
 `--synchronous-upload = false`  
