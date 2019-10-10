@@ -41,7 +41,7 @@ If a backup is interrupted there will likely be partial files present on the bac
 
 ### auto-compact-interval
 `--auto-compact-interval = 0m`  
-The minimum amount of time that must elapse after the last compaction before another will be automatically triggered at the end of a backup job. Automatic compaction can be a long-running process and may not be desirable to run after every single backup.
+The minimum amount of time that must elapse after the last compaction before another will be automatically triggered at the end of a backup job. Automatic compaction can be a long-running process and may not be desirable to run after every single backup. Requires `--no-auto-compact = false`.
 
 ### auto-update
 `--auto-update = false`  
@@ -53,7 +53,7 @@ Some operations that manipulate the local database leave unused entries behind. 
 
 ### auto-vacuum-interval
 `--auto-vacuum-interval = 0m`  
-The minimum amount of time that must elapse after the last vacuum before another will be automatically triggered at the end of a backup job. Automatic vacuum can be a long-running process and may not be desirable to run after every single backup.
+The minimum amount of time that must elapse after the last vacuum before another will be automatically triggered at the end of a backup job. Automatic vacuum can be a long-running process and may not be desirable to run after every single backup. Requires `--auto-vacuum = true`.
 
 ### backup-name
 `--backup-name = Duplicati.CommandLine`  
