@@ -69,7 +69,7 @@ The storage-URL should be specified in this format:
 
 Multiple source paths can be specified if they are separated by a space.
 
-`username` ust not contain `:` and `password` must not contain `@`. If they do, specify username and password using `--auth-username` and `--auth-password`, or url-encode them.
+`username` must not contain `:` and `password` must not contain `@`. If they do, specify username and password using `--auth-username` and `--auth-password`, or url-encode them.
 
 Add as many advanced options as needed, like `--passphrase` and `--dblock-size`.
 
