@@ -234,7 +234,7 @@ Use this option to handle hardlinks (only works on Linux/OSX). The `first` optio
 
 ### ignore-filenames
 `--ignore-filenames`  
-Use this option to set a filename, or list of filenames, that indicate exclusion of a folder which contains it. A common use would be to have a file named something like ".nobackup" and place this file into folders that should not be backed up.
+Use this option to set a filename, or list of filenames, that indicate exclusion of a folder which contains it. A common use would be to have a file named something like ".nobackup" and place this file into folders that should not be backed up. Under Windows the PathSepartor is the semicolon (;) and on Linux System the colon (:).
 
 ### include
 `--include`  
