@@ -225,7 +225,7 @@ Use this option to increase verification by checking the hash of blocks read fro
 After a backup is completed, some files are selected for verification on the remote backend. Use this option to turn on full verification, which will decrypt the files and examine the insides of each volume, instead of simply verifying the external hash, If the option `--no-backend-verification` is set, no remote files are verified. This option is automatically set when then verification is performed directly.
 
 ### full-result
---full-result = false  
+`--full-result = false`  
 Use this option to increase the amount of output generated as the result of the operation, including all filenames.
 
 ### hardlink-policy
