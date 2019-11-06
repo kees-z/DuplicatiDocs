@@ -91,7 +91,7 @@ This command line tool can be used to register Duplicati.Server.exe as a Windows
 
 The service is started with the SYSTEM account by default. The SYSTEM account has full access to the complete local filesystem. As a result, all files on the local system can be accessed by the Duplicati Web interface. Therefore it is strongly recommended to secure the web interface with a password when using Duplicati as a Windows service.
 
-To register `Duplicati.Server.exe` as a Windows service, open an elevated command prompt (Run as Administrator). Go to the Duplicati 2 directory (usually located in `c:\Program Files\`) and run `Duplicati.WindowsService.exe install` . Wait message that confirms that `Duplicati.Server.exe` is set as a Windows service and close command prompt. Restart PC to start the service. Installation of Duplicati Server as a Windows service is finished.
+To register `Duplicati.Server.exe` as a Windows service, open a command prompt with administrator privileges (open start memu, type `cmd`, right click on "Command prompt", select  "Run as Administrator"). Go to the Duplicati 2 directory (usually located in `c:\Program Files\`) and run `Duplicati.WindowsService.exe install` . Wait for the message that confirms that `Duplicati.Server.exe` is set as a Windows service and close command prompt. Restart PC to start the service. 
 
 `Duplicati.WindowsService.exe` accepts the following commands:
 
