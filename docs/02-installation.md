@@ -210,7 +210,7 @@ Select which components you want to install. Pay special attention to _Launch Du
 ![](ss_installwindows_03.png)
 
 The Tray Icon tool will be installed, but not automatically started. You can start it manually by executing Duplicati.GUI.TrayIcon.exe.  
-  
+
 * Keep _Launch Duplicati at startup_ enabled, but modify the properties of the shortcut after the installation wizard has been completed.  
 
 This will ease access to the Duplicati Web interface, but if you don't manually deactivate the internal server component, you will end up with multiple Duplicati instances, which is probably undesirable.
@@ -260,4 +260,3 @@ Because at the moment the internal server component of the Tray Icon tool is alr
 ![](icon_windows_end.png)
 
 *****
-
