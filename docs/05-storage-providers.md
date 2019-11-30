@@ -1,10 +1,12 @@
+A storage provider is a destination or a target for your backup data. This could be a local files or folder, a networked storage device, or a cloud storage provider. Duplicati supports many storage providers, both standard protocols and a wide range of proprietary cloud storage solutions. You can configure how each storage provider is used with its own set of options. 
 
-
-Duplicati supports many storage providers to use as backend for your backups. Both standard protocols and a wide range of proprietary cloud storage solutions are supported. Each storage provider has its own set of options that you can specify. Some options are mandatory, other options are optional. Use this list of providers as a reference to compose a valid command for communication with the storage provider of your choice.
+When configuring a backup, the storage URL parameter determines which storage provider will be used.  Each storage provider has a different URL format which can be used along with the documented options below.
 
 ## Local folder or drive
 
-Duplicati can use the local file system to store backups. The following target URL formats can be used:
+This backend can be used to read and write data to the local file system. 
+
+URL Formats:
 
 `file://hostname/folder%20for%20backup`  
 `file://\\server\folder%20for%20backup (UNC path)`  
@@ -29,7 +31,9 @@ If this option is set, any existing authentication against the remote share is d
 
 ## FTP
 
-Duplicati can use FTP servers to store backups. The following target URL formats can be used:
+This provider uses FTP servers to store backups.
+
+URL Formats:
 
 `ftp://hostname/folder`
 
@@ -50,15 +54,14 @@ To protect against network failures, every upload will be attempted verified. Us
 
 ## FTP (Alternative)
 
-This backend can read and write data to an FTP based backend using an alternative FTP client. Allowed formats are
+This backend can read and write data to an FTP based backend using an alternative FTP client.
+
+URL Formats:
 
 `aftp://hostname/folder`
-
-or
-
 `aftp://username:password@hostname/folder`
 
-upported options:
+Options:
 
 * `--auth-password (Password)`  
 Supplies the password used to connect to the server  
