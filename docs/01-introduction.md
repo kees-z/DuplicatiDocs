@@ -86,7 +86,7 @@ Duplicati is licensed under LGPL and available for Windows and Linux. The softwa
 
 ## Supported backends
 
-Duplicati can make backups to a large number of targets. For local backups, all devices can be used that are attached locally or using a UNC path, like:
+Duplicati can make backups to [a large number of targets](../05-storage-providers). For local backups, all devices can be used that are attached locally or using a UNC path, like:
 
 * External USB hard disk drive
 * USB thumb drive
@@ -104,7 +104,7 @@ Backups to these targets using the following standard network protocols are supp
 
 The following Cloud Storage Providers are supported natively by Duplicati:
 
-* Amazon Cloud Drive</span>
+* Amazon Cloud Drive
 * Amazon S3
 * Azure blob
 * B2 Cloud Storage
@@ -117,9 +117,8 @@ The following Cloud Storage Providers are supported natively by Duplicati:
 * Mega.nz
 * Microsoft Office 365 Groups
 * Microsoft OneDrive for Business
-* Microsoft OneDrive v2
+* Microsoft OneDrive
 * Microsoft SharePoint
-* Microsoft SharePoint v2
 * OpenStack Simple Storage
 * Rackspace CloudFiles
 * Rclone
