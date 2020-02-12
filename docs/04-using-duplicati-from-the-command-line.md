@@ -217,6 +217,9 @@ Tries to repair the backup. If no local database is found or the database is emp
 
 `Duplicati.CommandLine.exe repair <storage-URL> [<options>]`
 
+Example for B2 storage:
+`Duplicati.CommandLine.exe repair "b2://blacksmith/photos?auth-username=1234567890&auth-password=123ABc456dEfGH" --dbpath="C:\Users\User1\AppData\Local\Duplicati\SONSONSHE.sqlite" --passphrase="1234567890ABCdef"`
+
 ## The AFFECTED command
 
 Returns a report explaining what backup sets and files are affected by a remote file. You can use this option to see what source files are affected if one or more remote files are damaged or deleted. The advanced option `dbpath` is required to specify the location of the local database. Usage:
