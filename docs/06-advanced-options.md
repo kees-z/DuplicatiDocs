@@ -609,10 +609,10 @@ Send messages for all operations.
 By default, messages will only be sent after a Backup operation. Use this option to send messages for all operations.
 
 ### --send-http-result-output-format
-'--send-http-result-output-format (Enumeration)'
-Selects the output format for results. Available formats: Duplicati, Json
-Values: `Duplicati`, `Json`
-Default value: `Duplicati`
+`--send-http-result-output-format (Enumeration)`  
+Selects the output format for results. Available formats: Duplicati, Json  
+Values: `Duplicati`, `Json`  
+Default value: `Duplicati`  
 
 ### send-mail-to
 `--send-mail-to (String)`  
@@ -686,10 +686,10 @@ Send email for all operations.
 By default, mail will only be sent after a Backup operation. Use this option to send mail for all operations.
 
 ### send-mail-result-output-format
-`--send-mail-result-output-format (Enumeration)`
-Selects the output format for results. Available formats: Duplicati, Json
-Values: `Duplicati`, `Json
-Default value: `Duplicati`
+`--send-mail-result-output-format (Enumeration)`  
+Selects the output format for results. Available formats: Duplicati, Json  
+Values: `Duplicati`, `Json  
+Default value: `Duplicati`  
     
 ### send-xmpp-to
 `--send-xmpp-to (String)`  
@@ -739,7 +739,7 @@ Send messages for all operations.
 By default, messages will only be sent after a Backup operation. Use this option to send messages for all operations.
 
 ### send-xmpp-result-output-format
-`--send-xmpp-result-output-format (Enumeration)`
-Selects the output format for results. Available formats: Duplicati, Json
-Values: `Duplicati`, `Json`
-Default value: `Duplicati`
+`--send-xmpp-result-output-format (Enumeration)`  
+Selects the output format for results. Available formats: Duplicati, Json  
+Values: `Duplicati`, `Json`  
+Default value: `Duplicati`  
