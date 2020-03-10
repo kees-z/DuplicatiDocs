@@ -688,7 +688,7 @@ By default, mail will only be sent after a Backup operation. Use this option to 
 ### send-mail-result-output-format
 `--send-mail-result-output-format (Enumeration)`  
 Selects the output format for results. Available formats: Duplicati, Json  
-Values: `Duplicati`, `Json  
+Values: `Duplicati`, `Json`  
 Default value: `Duplicati`  
     
 ### send-xmpp-to
