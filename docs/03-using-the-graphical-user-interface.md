@@ -419,7 +419,7 @@ If you select _Encrypt file_, you can enter a passphrase to scramble your config
 
 ![](icon_important.png) Losing the passphrase will make the configuration file useless. Without the passphrase it is impossible to extract information from the configuration file. Store the passphrase in a safe place.
 
-![](icon_important.png) Never store the configuration file and ? if applicable ? the passphrase on the computer running Duplicati. It is likely that you need them when your computer is lost. Be sure to keep access to file and passphrase if you can?t use your computer anymore.
+![](icon_important.png) Never store the configuration file and, if applicable, the passphrase on the computer running Duplicati. It is likely that you need them when your computer is lost. Be sure to keep access to file and passphrase if you can't use your computer anymore.
 
 The contents of the file (in unencrypted form) could look something like this:
 
