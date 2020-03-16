@@ -360,7 +360,7 @@ By default permissions are not restored as they might prevent you from accessing
 
 ### restore-symlink-metadata
 `--restore-symlink-metadata = false`  
-If symlink metadata is applied, it will usually mean changing the symlink target, instead of the symlink itself. For this reason, metadata is notapplied to symlinks, but this option can be used to override this, suchthat metadata is applied to symlinks as well.
+If symlink metadata is applied, it will usually mean changing the symlink target, instead of the symlink itself. For this reason, metadata is not applied to symlinks, but this option can be used to override this, such that metadata is applied to symlinks as well.
 
 ### retention-policy
 `--retention-policy`  
