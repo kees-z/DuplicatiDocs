@@ -622,7 +622,7 @@ To open a command line screen, click the backup name and click _Commandline ..._
 
 In the Commandline screen you can specify a number of options in a few sections:
 
-In the _Command_ section, you ocan choose which command line tool you actualle want to use. You can choose from _send-mail_, _systeminfo_, _vacuum_, _affected_, _test-filters_, _verify_, _test_, _compare_, _create-report_, _compact_, _purge-broken-files_, _list-broken-files_, _purge_, _repair_, _restore_, _backup_, _delete_, _list_, _find_, _examples_ and _help_.
+In the _Command_ section, you can choose which command line tool you actually want to use. You can choose from _send-mail_, _systeminfo_, _vacuum_, _affected_, _test-filters_, _verify_, _test_, _compare_, _create-report_, _compact_, _purge-broken-files_, _list-broken-files_, _purge_, _repair_, _restore_, _backup_, _delete_, _list_, _find_, _examples_ and _help_.
 
 ![](ss_commandlinegui_02.png)
 
