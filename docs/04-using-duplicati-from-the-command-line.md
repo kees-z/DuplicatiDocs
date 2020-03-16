@@ -86,7 +86,7 @@ Duplicati.CommandLine.exe backup "ftp://myftpserver.com/Backup/Pictures?auth-use
 
 ## The RESTORE command
 
-The `restore` command can restore files from a specific restore point the local system. Use the following format:
+The `restore` command can restore files from a specific restore point to the local system. Use the following format:
 
 `Duplicati.CommandLine.exe restore <storage-URL> ["<filename>"] [<options>]`
 
