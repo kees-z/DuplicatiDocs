@@ -122,6 +122,11 @@ In step 2 you can specify the Storage Type you want to use for your backups and 
 ![](ss_newbackup_03.png)
 
 *****
+> ![](icon_important.png) Never store multiple backups in the same remote location. Backup data files from multiple backup jobs will interfere with each other and will result in failed backup operations. Always create a new remote folder for each backup job that you set up.
+
+*****
+
+*****
 > ![](icon_info.png) Each Storage Type has its own requirements that you need to fill in. For an S3 compatible backend, you need to specify a Bucket name, region and storage class. For other backends, like Google Drive or Microsoft OneDrive, you need to create an AuthID token to grant permission to Duplicati to get access to that backend.
 
 *****
