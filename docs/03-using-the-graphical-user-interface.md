@@ -200,7 +200,7 @@ The specified number of backup versions will be kept, all older backups will be 
 Under _Advanced options_ there is an extensive list of options to fine-tune your backup job. Click _Pick an option_ and select which option you want to set. This option is added to a list where you can change the value of that option.</span></span>
 
 *****
-> ![](icon_important.png) This is only for advanced users. Don't use this, unless you know exactly what you?re doing. Choosing incorrect values may cause unusable backups.
+> ![](icon_important.png) This is only for advanced users. Don't use this, unless you know exactly what you're doing. Choosing incorrect values may cause unusable backups.
 
 *****
 
