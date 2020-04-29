@@ -194,7 +194,7 @@ Duplicati supports pluggable encryption modules. Use this option to select a mod
 
 ### exclude
 `--exclude`  
-Exclude files that match this filter. The special characterc `*` means any number of character, and the special character `?` means any single character, use `*.txt` to exclude all files with a txt extension. Regular expressions are also supported and can be supplied by using hard braces, i.e. `[.*\.txt]`.
+Exclude files that match this filter. The special character `*` means any number of character, and the special character `?` means any single character, use `*.txt` to exclude all files with a txt extension. Regular expressions are also supported and can be supplied by using hard braces, i.e. `[.*\.txt]`.
 
 ### exclude-empty-folders
 `--exclude-empty-folders = false`  
