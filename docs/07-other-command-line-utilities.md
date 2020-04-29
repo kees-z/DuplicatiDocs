@@ -221,7 +221,7 @@ Usage:
 The following commands are supported:  
 `GET`, `PUT`, `LIST`, `DELETE`, `CREATEFOLDER`
 
-he supported protocols are:  
+The supported protocols are:  
 `aftp`, `amzcd`, `azure`, `b2`, `box`, `cloudfiles`, `dropbox`, `file`, `ftp`, `googledrive`, `gcs`, `hubic`, `jottacloud`, `mega`, `onedrive`, `openstack`, `s3`, `od4b`, `mssp`, `ssh`, `tahoe`, `webdav`
 
 Example:  
