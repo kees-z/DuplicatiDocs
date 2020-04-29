@@ -142,7 +142,7 @@ In step 3 you can select the files and folders you want to include in the backup
 ![](ss_newbackup_05.png)
 
 *****
-> ![](icon_important.png) If you want to include one or more libraries, like My Documents or My Pictures, keep in mind that the file picker shows these location in the context of the user account that is used to start the server component. If you run Duplicati using the integrated server component in the System Tray tool (this is the default setup), then these libraries point to your personal folders. However, if you registered Duplicati as a service, these libraries point to the personal folders of the SYSTEM account, which are probably empty. To select your personal libraries, don?t use the My Documents/Music/Pictures/Videos/Desktop items, but drill down through the file system, probably `C:\Users\<Username>\Documents` etc.
+> ![](icon_important.png) If you want to include one or more libraries, like My Documents or My Pictures, keep in mind that the file picker shows these location in the context of the user account that is used to start the server component. If you run Duplicati using the integrated server component in the System Tray tool (this is the default setup), then these libraries point to your personal folders. However, if you registered Duplicati as a service, these libraries point to the personal folders of the SYSTEM account, which are probably empty. To select your personal libraries, don't use the My Documents/Music/Pictures/Videos/Desktop items, but drill down through the file system, probably `C:\Users\<Username>\Documents` etc.
 
 *****
 
