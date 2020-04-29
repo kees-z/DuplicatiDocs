@@ -292,6 +292,6 @@ This command downloads all files to the local folder specified by `<localfolder>
 *****
 
 *****
-> ![](icon_important.png) Warning: Before recompress delete local database and after recompress recreate local database before executing any operation on backup. This allows Duplicati to read new file names from remote storage.
+> ![](icon_important.png) Warning: Before recompressing, delete the local database and recreate the local database again after recompressing. Do this before executing any operation on the backup so that Duplicati can read the new file names from remote storage.
 
 *****
