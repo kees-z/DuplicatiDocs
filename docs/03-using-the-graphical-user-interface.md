@@ -210,7 +210,7 @@ Click the _Save_ button. Your first backup job should show up in the main window
 
 ![](ss_newbackup_12.png)
 
-If you have a previously exported configuration file, you can import it by selecting _Import from a file_ in the _Add backup_ menu. N the next step you can browse to the location where your configuration file is stored, enter a passphrase if the configuration file is encrypted and click _Import_. If _Save immediately_ was deselected before the _Import_ button was clicked, you can review all 5 steps and make changes if desirable. Click the _Save_ button in step 5 to save your backup job configuration.
+If you have a previously exported configuration file, you can import it by selecting _Import from a file_ in the _Add backup_ menu. In the next step you can browse to the location where your configuration file is stored, enter a passphrase if the configuration file is encrypted and click _Import_. If _Save immediately_ was deselected before the _Import_ button was clicked, you can review all 5 steps and make changes if desirable. Click the _Save_ button in step 5 to save your backup job configuration.
 
 > ![](icon_info.png) When importing a backup job from a configuration file, a new database will be created, using a random filename. If the configuration file contains the name of a local database, this name will be ignored. This will prevent problems caused by multiple backup jobs using the same local database.  
 If you want to re-use an existing database, open the backup configuration’s Database menu after the job is imported. Enter the path and filename of the existing local database in the Local database path field.
