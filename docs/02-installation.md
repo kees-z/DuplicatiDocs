@@ -88,6 +88,17 @@ sudo apt-get update
 sudo apt-get install mono-devel
 ```
 
+**Debian 10:**
+```nohighlight
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+
+echo "deb http://download.mono-project.com/repo/debian buster main" | sudo tee /etc/apt/sources.list.d/mono-official.list
+
+sudo apt-get update
+
+sudo apt-get install mono-devel
+```
+
 **Debian 9:**
 ```nohighlight
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
@@ -259,4 +270,69 @@ Because at the moment the internal server component of the Tray Icon tool is alr
 *****
 ![](icon_windows_end.png)
 
+*****
+
+## Installing Duplicati on Linux
+
+*****
+![](icon_linux_begin.png) Follow this procedure to install Duplicati on your Linux based system.
+
+*Maybe optional*: Forum [instructions](https://forum.duplicati.com/t/how-to-install-duplicati-on-debian-stretch/4722) advise installation of the following Debian repository packages.
+
+```nohighlight
+sudo apt install apt-transport-https sudo nano git-core python software-properties-common dirmngr -y
+```
+Download Debian .deb file from [https://www.duplicati.com/download](https://www.duplicati.com/download)
+
+```wget https://updates.duplicati.com/beta/duplicati_[...]_all.deb```
+
+Edit this line too before you run it with the correct deb file filename you just downloaded:
+
+```sudo apt install ./duplicati_[...]_all.deb -y```
+
+Create and edit the file /etc/systemd/system/duplicati.service
+
+`sudo nano /etc/systemd/system/duplicati.service`
+
+Should look like this:
+```nohighlight
+[Unit]
+Description=Duplicati web-server
+After=network.target
+
+[Service]
+Nice=19
+IOSchedulingClass=idle
+EnvironmentFile=-/etc/default/duplicati
+ExecStart=/usr/bin/duplicati-server $DAEMON_OPTS
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Edit the file /etc/default/duplicati and add DAEMON_OPTS options to your liking:
+`sudo nano /etc/default/duplicati`
+
+```nohighlight
+# Defaults for duplicati initscript
+# sourced by /etc/init.d/duplicati
+# installed at /etc/default/duplicati by the maintainer scripts
+
+#
+# This is a POSIX shell fragment
+#
+
+# Additional options that are passed to the Daemon.
+DAEMON_OPTS="--webservice-interface=any --webservice-port=8200 --portable-mode"
+
+Enable, start and check running status of the duplicati service:
+sudo systemctl enable duplicati.service
+sudo systemctl daemon-reload
+sudo systemctl start duplicati.service	
+sudo systemctl status duplicati.service
+```
+
+![](icon_linux_end.png)  
+  
 *****
