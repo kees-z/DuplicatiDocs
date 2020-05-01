@@ -194,7 +194,7 @@ Duplicati supports pluggable encryption modules. Use this option to select a mod
 
 ### exclude
 `--exclude`  
-Exclude files that match this filter. The special characterc `*` means any number of character, and the special character `?` means any single character, use `*.txt` to exclude all files with a txt extension. Regular expressions are also supported and can be supplied by using hard braces, i.e. `[.*\.txt]`.
+Exclude files that match this filter. The special character `*` means any number of character, and the special character `?` means any single character, use `*.txt` to exclude all files with a txt extension. Regular expressions are also supported and can be supplied by using hard braces, i.e. `[.*\.txt]`.
 
 ### exclude-empty-folders
 `--exclude-empty-folders = false`  
@@ -234,7 +234,7 @@ Use this option to handle hardlinks (only works on Linux/OSX). The `first` optio
 
 ### ignore-filenames
 `--ignore-filenames`  
-Use this option to set a filename, or list of filenames, that indicate exclusion of a folder which contains it. A common use would be to have a file named something like ".nobackup" and place this file into folders that should not be backed up. The Separtor is for Windows systems the semicolon (;) and on Linux systems the colon (:).
+Use this option to set a filename, or list of filenames, that indicate exclusion of a folder which contains it. A common use would be to have a file named something like ".nobackup" and place this file into folders that should not be backed up. The separator for Windows system is a semicolon (;) and for Linux systems is a colon (:).
 
 ### include
 `--include`  

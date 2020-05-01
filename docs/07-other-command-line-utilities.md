@@ -221,7 +221,7 @@ Usage:
 The following commands are supported:  
 `GET`, `PUT`, `LIST`, `DELETE`, `CREATEFOLDER`
 
-he supported protocols are:  
+The supported protocols are:  
 `aftp`, `amzcd`, `azure`, `b2`, `box`, `cloudfiles`, `dropbox`, `file`, `ftp`, `googledrive`, `gcs`, `hubic`, `jottacloud`, `mega`, `onedrive`, `openstack`, `s3`, `od4b`, `mssp`, `ssh`, `tahoe`, `webdav`
 
 Example:  
@@ -292,6 +292,6 @@ This command downloads all files to the local folder specified by `<localfolder>
 *****
 
 *****
-> ![](icon_important.png) Warning: Before recompress delete local database and after recompress recreate local database before executing any operation on backup. This allows Duplicati to read new file names from remote storage.
+> ![](icon_important.png) Warning: Before recompressing, delete the local database and recreate the local database again after recompressing. Do this before executing any operation on the backup so that Duplicati can read the new file names from remote storage.
 
 *****
