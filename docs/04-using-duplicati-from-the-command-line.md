@@ -40,6 +40,7 @@ Storage-URL, arguments and advanced-options may or may not be mandatory, dependi
 
 *****
 
+
 ## Getting help from the Command Line Tools
 
 The Commandline tool provides online help with the special `help` command. To get started, type `Duplicati.CommandLine.exe help`.
