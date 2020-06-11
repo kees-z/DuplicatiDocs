@@ -524,6 +524,7 @@ The contents of the file (in unencrypted form) could look something like this:
 }
 ```
 
+
 ## Deleting a backup job configuration
 
 You can delete a backup job if you no longer need to backup the files included in that backup job, or if the source files no longer exist. To delete a backup job, click on the backup name and click _Delete ..._ under _Configuration_.
