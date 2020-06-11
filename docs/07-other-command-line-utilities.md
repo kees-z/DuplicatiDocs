@@ -3,6 +3,7 @@ A number of Command Line Utilities are included in the Duplicati package. Each c
 
 All Command Line Utilities can be found in the Duplicati program folder.
 
+
 ## Duplicati.GUI.TrayIcon.exe
 
 This utility starts the Duplicati tray icon. Without additional parameters specified, the included webserver is activated. The webserver listens on TCP port 8200 by default. If port 8200 is unavailable, port 8300 is tried, increasing until a free port is found. You can disable the internal webserver if you are using a separate instance of the Duplicati Server component.
