@@ -275,7 +275,7 @@ Install the latest update from the currently selected update channel.
 
 ## Duplicati.CommandLine.RecoveryTool.exe
 
-This tool can be used in very specific situations, where you have to restore data from a corrupted backup. The procedure for recovering from this scenario is covered in [Disaster Recovery](08-disaster-recovery).
+This tool can be used in very specific situations, where you have to restore data from a corrupted backup. The procedure for recovering from this scenario is covered in [Disaster Recovery](../08-disaster-recovery).
 
 Additionally, you can use the Recovery Tool to convert your backup files to another compression type. When creating a new backup job, you have to choose a compression type (default is Zip). After the first backup is made, the compression type cannot be changed. With the Duplicati Recovery Tool, you can download all files from the backend to your local filesystem, encrypt and uncompress them.
 
