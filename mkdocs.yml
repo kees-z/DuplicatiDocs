@@ -33,16 +33,22 @@ extra:
   social:
     - type: 'edge'
       link: 'https://www.duplicati.com'
+      icon: 'fontawesome/regular/newspaper'
     - type: 'comment'
       link: 'https://forum.duplicati.com'
+      icon: 'fontawesome/regular/comment'
     - type: 'github'
       link: 'https://github.com/duplicati/duplicati'
+      icon: 'fontawesome/brands/github'
     - type: 'google-plus'
       link: 'https://plus.google.com/105271984558189185842'
+      icon: 'fontawesome/brands/google-plus'
     - type: 'facebook'
       link: 'http://www.facebook.com/pages/Duplicati/105118456272281'
+      icon: 'fontawesome/brands/facebook'
     - type: 'donate'
       link: 'https://www.duplicati.com/donate'
+      icon: 'fontawesome/regular/credit-card'
 
 
 # Google Analytics
