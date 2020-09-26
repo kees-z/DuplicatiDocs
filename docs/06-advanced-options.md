@@ -335,7 +335,7 @@ Supply a passphrase that Duplicati will use to encrypt the backup volumes, makin
 Enable this option to look into other files on this machine to find existing blocks. This is a fairly slow operation but can limit the size of downloads.
 
 ### prefix
-`--prefix = duplicate`  
+`--prefix = duplicati`  
 A string used to prefix the filenames of the remote volumes, can be used to store multiple backups in the same remote folder. The prefix cannot contain a hyphen (`-`), but can contain all other characters allowed by the remote storage.
 
 ### quiet-console
