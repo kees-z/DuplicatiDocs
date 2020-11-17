@@ -325,8 +325,9 @@ Edit the file /etc/default/duplicati and add DAEMON_OPTS options to your liking:
 
 # Additional options that are passed to the Daemon.
 DAEMON_OPTS="--webservice-interface=any --webservice-port=8200 --portable-mode"
-
+```
 Enable, start and check running status of the duplicati service:
+```
 sudo systemctl enable duplicati.service
 sudo systemctl daemon-reload
 sudo systemctl start duplicati.service	
