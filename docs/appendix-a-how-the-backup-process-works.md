@@ -40,7 +40,7 @@ To store the information about what is in the backup, Duplicati relies on standa
 
 To store the file list, Duplicati creates a file named `duplicati-20161014090000.dlist.zip` locally, where the numbers represent the current date and time in the UTC timezone. Inside this zip archive is a single JSON file named `filelist.json`, which starts out by being an empty list, which is expressed in JSON as `[]`.
 
-To store the data from files, Duplicati creates a file named `duplicati-7af781d3401eb90cd371.dblock.zip`, where the letters and numbers are chosen at random and have no relation to the data nor the current time. Initally this zip file is empty.
+To store the data from files, Duplicati creates a file named `duplicati-7af781d3401eb90cd371.dblock.zip`, where the letters and numbers are chosen at random and have no relation to the data nor the current time. Initially this zip file is empty.
 
 You can see an overview of the process here:
 
