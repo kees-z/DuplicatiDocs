@@ -137,6 +137,8 @@ Some advanced options that can be used with the `compare` command:
 
 * `--verbose`  
 Shows names of files
+* `--full-result`  
+Lists all added / removed / changed files instead of summarized version.
 * `--include=<filter>`  
 Adds an include filter (for verbose output)
 * `--exclude=<filter>`  
