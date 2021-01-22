@@ -583,7 +583,7 @@ First type in a new path and/or filename. Clicking Reset will undo changes you m
 
 At the end of each backup job, Duplicati checks the integrity by downloading a few files from the backend. The contents of these file is checked against what Duplicati expects it to be. This procedure increases the reliability of the backup files, but backups take a bit longer to complete and use some download bandwidth.
 
-Automatic verification after backup completion can be disabled by setting an advanced option. Howver, checking the integrity of the backup files is very important. If you disabled automatic verification, or if you just want to perform an additional verification, click the backup name and click Verify files under Advanced.
+Automatic verification after backup completion can be disabled by setting an advanced option. However, checking the integrity of the backup files is very important. If you disabled automatic verification, or if you just want to perform an additional verification, click the backup name and click Verify files under Advanced.
 
 ![](ss_verifybackup_01.png)
 
@@ -716,7 +716,7 @@ Click to check the _Password_ checkbox to secure the web interface with a passwo
 When enabled, _Allow remote access_ allows access to the web interface from other hosts in the network.
 
 *****
-> ![](icon_info.png) If you are using a firewall, don't forget to make an access rule in your firewall to allow incoming traffic using the port the Duplicati sever listens on (default port is TCP port 8200).
+> ![](icon_info.png) If you are using a firewall, don't forget to make an access rule to allow incoming traffic using the port the Duplicati server listens on (default port is TCP port 8200).
 
 *****
 
