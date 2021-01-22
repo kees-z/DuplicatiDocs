@@ -5,7 +5,7 @@ When configuring a backup, the storage URL parameter determines which storage pr
 
 ## Local folder or drive
 
-This backend can be used to read and write data to the local file system.
+This backend can be used to read and write data to the local file system. You can also connect to network filesystem via SMB/NFS.
 
 URL Format:
 
@@ -14,6 +14,15 @@ URL Format:
 `"C:\folder for backup"`
 `file://c:\folder%20for%20backup (Windows)`
 `file:///usr/pub/folder%20for%20backup (Linux)`
+
+In order to specify network filesystem that is not mounted into your local filesystem click on `Manually type path` option which allows you to specify the `Folder path` directly in the following format:
+
+`\\hostname_or_ip_address\folder\subfolder`
+
+For example:
+`\\192.168.1.10\backup`
+
+You can then also specify the Username and password (if required).
 
 Options:
 
