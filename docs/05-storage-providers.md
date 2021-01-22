@@ -426,16 +426,9 @@ Specifies storage class for creating a bucket.
 This option is only used when creating new buckets. Use this option to change what storage type the bucket has.
 Charges and functionality vary with bucket storage class. Known storage classes:
     * (default):
-    * Europe: EU
-    * United States: US
-    * Asia: ASIA
-    * Eastern Asia-Pacific: ASIA-EAST1
-    * Central United States 1: US-CENTRAL1
-    * Central United States 2: US-CENTRAL2
-    * Eastern United States 1: US-EAST1
-    * Eastern United States 2: US-EAST2
-    * Eastern United States 3: US-EAST3
-    * Western United States: US-WEST1
+    * Standard: STANDARD
+    * Durable Reduced Availability (DRA): DURABLE_REDUCED_AVAILABILITY
+    * Nearline: NEARLINE
 * `--authid (Password)`
 The authorization code.
 The authorization token retrieved from https://duplicati-oauth-handler.appspot.com?type=gcs
