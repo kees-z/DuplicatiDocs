@@ -308,7 +308,7 @@ Next part of the restore process is downloading the required upload volumes from
 
 ![](ss_restorefiles_08.png)
 
-After the operation has been completed, Duplicati will notify you and encourage you to make a donation. The donation information can be disabled in the _Settings_ menu. Warnings or errors, if any, will be showed in the bottom part of the Duplicati main screen. Clock OK to return to the main screen.
+After the operation has been completed, Duplicati will notify you and encourage you to make a donation. The donation information can be disabled in the _Settings_ menu. Warnings or errors, if any, will be showed in the bottom part of the Duplicati main screen. Click OK to return to the main screen.
 
 ![](ss_restorefiles_09.png)
 
