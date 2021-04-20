@@ -61,7 +61,7 @@ A display name that is attached to this backup. Can be used to identify the back
 
 ### backup-test-samples
 `--backup-test-samples = 1`  
-After a backup is completed, some files are selected for verification on the remote backend. Use this option to change how many. If this value is set to 0 or the option --no-backend-verification is set, no remote files are verified
+After a backup is completed, some files (in each file categoy: dblock, dindex, dlist) are selected for verification on the remote backend. Use this option to change how many files in each category should be tested. If this value is set to 0 or the option --no-backend-verification is set, no remote files are verified. 
 
 ### block-hash-algorithm
 `--block-hash-algorithm = SHA256`  
