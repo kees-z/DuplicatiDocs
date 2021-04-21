@@ -51,7 +51,7 @@ echo "deb https://download.mono-project.com/repo/ubuntu stable-focal main" | sud
 
 sudo apt update
 
-sudo apt install mono-devel gtk-sharp2
+sudo apt install mono-devel gtk-sharp2 
 ```
 
 **Ubuntu 18.04:**  
@@ -304,7 +304,7 @@ Because at the moment the internal server component of the Tray Icon tool is alr
 *Maybe optional*: Forum [instructions](https://forum.duplicati.com/t/how-to-install-duplicati-on-debian-stretch/4722) advise installation of the following Debian repository packages.
 
 ```nohighlight
-sudo apt install apt-transport-https nano git-core python software-properties-common dirmngr -y
+sudo apt install apt-transport-https nano git-core software-properties-common dirmngr -y
 ```
 Download Debian .deb file from [https://www.duplicati.com/download](https://www.duplicati.com/download)
 
