@@ -142,9 +142,9 @@ URL Format:
 
 Options:
 
-* `--aws_secret_access_key`
+* `--aws-secret-access-key`
 The AWS "Secret Access Key" can be obtained after logging into your AWS account, this can also be supplied through the `auth-password` property.
-* `--aws_access_key_id`
+* `--aws-access-key-id`
 The AWS "Access Key ID" can be obtained after logging into your AWS account, this can also be supplied through the `auth-username` property.
 * `--s3-european-buckets = false`
 This flag is only used when creating new buckets. If the flag is set, the bucket is created on a European server.
@@ -282,7 +282,7 @@ Options:
 The password used to connect to the server. This may also be supplied as the environment variable "AUTH_PASSWORD".
 * `--auth-username`
 The username used to connect to the server. This may also be supplied as the environment variable "AUTH_USERNAME".
-* `--azure_blob_container_name (String)`
+* `--azure-blob-container_name (String)`
 The name of the storage container.
 All files will be written to the container specified.
 * `--integrated-authentication`
@@ -328,18 +328,18 @@ URL Format:
 
 Options:
 
-* `--azure_account_name (String)`
+* `--azure-account-name (String)`
 The storage account name.
 The name of the Azure storage account to connect to.  This parameter will be ignored if the name is specified in the URL.
-* `--azure_access_key (Password)`
+* `--azure-access-key (Password)`
 The storage account access key.
 The access key used to authenticate calls to the Azure storage account.  This parameter will be ignored in the access key is specified in the URL.
 * `--auth-username (String)`
 The storage account name.
-An alternative parameter for specifying the storage account name. This parameter will be ignored if the name is specified in the URL or the `--azure_account_name` parameter is provided. This may also be supplied as the environment variable `AUTH_USERNAME`.
+An alternative parameter for specifying the storage account name. This parameter will be ignored if the name is specified in the URL or the `--azure-account_name` parameter is provided. This may also be supplied as the environment variable `AUTH_USERNAME`.
 * `--auth-password (Password)`
 The storage account access key.
-An alternative parametyr for specifying the storage account access key. This parameter will be ignored if the access key is specified in the URL or the `--azure_access_key` parameter is provided. This may also be supplied as the environment variable `AUTH_PASSWORD`.
+An alternative parametyr for specifying the storage account access key. This parameter will be ignored if the access key is specified in the URL or the `--azure-access_key` parameter is provided. This may also be supplied as the environment variable `AUTH_PASSWORD`.
 
 ## B2 Cloud Storage
 
