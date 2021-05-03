@@ -185,6 +185,8 @@ Amazon charges slightly more for non-US buckets. Known bucket locations:
     * South America (São Paulo): sa-east-1
 * `--use-ssl`
 Use this flag to communicate using Secure Socket Layer (SSL) over http (https). Note that bucket names containing a period has problems with SSL connections.
+* `--s3-client`
+Set either to aws or minio . Then either the AWS SDK or Minio SDK will used to communicate with S3 services.
 * `--auth-password`
 The password used to connect to the server. This may also be supplied as the environment variable `AUTH_PASSWORD`.
 * `--auth-username`
