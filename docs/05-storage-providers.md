@@ -436,7 +436,10 @@ Options:
 * `--authid (Password)`
 The authorization code.
 The authorization token retrieved from [https://duplicati-oauth-handler.appspot.com?type=googledrive](https://duplicati-oauth-handler.appspot.com?type=googledrive)
-
+* `--googledrive-teamdrive-id (String)`
+Team drive ID.
+This option sets the team drive to use. Leaving it empty uses the personal drive.
+    
 ## HubiC
 
 This backend can read and write data to HubiC.
@@ -782,21 +785,28 @@ This backend can read and write data to the Tardigrade Decentralized Cloud Stora
 
 Supported options:
 
-* `--tardigrade-auth-method (String): The authentication method`
+* `--tardigrade-auth-method (String)`
+The authentication method
 The authentication method describes which way to use to connect to the network - either via API key or via an access grant.
 Default value: `API key`
-* `--tardigrade-satellite (String): The satellite`
+* `--tardigrade-satellite (String)`
+The satellite
 The satellite that keeps track of all metadata. Use a Tardigrade-grade server for high-performance SLA-backed connectivity or use a community server. Or even host your own.
 Default value: `us-central-1.tardigrade.io:7777`
-* `--tardigrade-api-key (String): The API key`
+* `--tardigrade-api-key (String)`
+The API key
 The API key grants access to a specific project on your chosen satellite. Head over to the dashboard of your satellite to create one if you do not already have an API key.
-* `--tardigrade-secret (Password): The encryption passphrase`
+* `--tardigrade-secret (Password)`
+The encryption passphrase
 The encryption passphrase is used to encrypt your data before sending it to the tardigrade network. This passphrase can be the only secret to provide - for Tardigrade you do not necessary need any additional encryption (from Duplicati) in place.
-* `--tardigrade-shared-access (String): The access grant`
+* `--tardigrade-shared-access (String)`
+The access grant
 An access grant contains all information in one encrypted string. You may use it instead of a satellite, API key and secret.
-* `--tardigrade-bucket (String): The bucket`
+* `--tardigrade-bucket (String)`
+The bucket
 The bucket where the backup will reside in.
-* `--tardigrade-folder (String): The folder`
+* `--tardigrade-folder (String)`
+The folder
 The folder within the bucket where the backup will reside in.
 
 ## Tencent COS
@@ -806,16 +816,22 @@ Object storage (Cloud Object Storage, COS) is a distributed storage service for 
 
 Supported options:
 
-* `--tardigrade-auth-method (String): The authentication method`
+* `--tardigrade-auth-method (String)`
+The authentication method
 The authentication method describes which way to use to connect to the network - either via API key or via an access grant.
 Default value: `API key`
-* `--cos-app-id (String): Account ID`
+* `--cos-app-id (String)`
+Account ID
 Account ID of Tencent Cloud Account
-* `--cos-region (String): Specifies COS location constraints
+* `--cos-region (String)`
+Specifies COS location constraints
 Region (Region) is the distribution area of ??the Tencent cloud hosting machine room, the object storage COS data is stored in the storage buckets of these regions. https://cloud.tencent.com/document/product/436/6224
-* `--cos-secret-id (String): Secret Id`
+* `--cos-secret-id (String)`
+Secret Id
 Cloud API Secret Id
-* `--cos-secret-key (Password): Secret Key`
+* `--cos-secret-key (Password)`
+Secret Key
 Cloud API Secret Key
-* `--cos-bucket (String): Bucket`
+* `--cos-bucket (String)`
+Bucket
 Bucket, format: BucketName-APPID
