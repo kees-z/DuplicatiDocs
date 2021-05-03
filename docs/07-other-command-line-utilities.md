@@ -302,7 +302,7 @@ This adds the ability to import backup configurations from the command-line. Thi
 
 The usage is as follows:
 ```
-ConfigurationImporter.exe <configuration-file> --import-metadata=(true | false) [<advanced-option>]...
+ConfigurationImporter.exe <configuration-file> --import-metadata=(true | false) --server-datafolder=<path to .sqlite file> [<advanced-option>]...
 ```
 For example:
 ```
