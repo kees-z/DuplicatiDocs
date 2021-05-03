@@ -59,6 +59,10 @@ The minimum amount of time that must elapse after the last vacuum before another
 `--backup-name = Duplicati.CommandLine`  
 A display name that is attached to this backup. Can be used to identify the backup when sending mail or running scripts.
 
+### backup-test-percentage
+`--backup-test-percentage = 0`
+After a backup is completed, some (dblock, dindex, dlist) files from the remote backend are selected for verification. Use this option to specify the percentage (between 0 and 100) of files to test. If the backup-test-samples option is also provided, the number of samples tested is the maximum implied by the two options. If the no-backend-verification option is provided, no remote files are verified.
+    
 ### backup-test-samples
 `--backup-test-samples = 1`  
 After a backup is completed, some files (in each file categoy: dblock, dindex, dlist) are selected for verification on the remote backend. Use this option to change how many files in each category should be tested. If this value is set to 0 or the option --no-backend-verification is set, no remote files are verified. 
