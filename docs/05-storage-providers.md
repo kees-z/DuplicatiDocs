@@ -802,10 +802,6 @@ Use this flag to communicate using Secure Socket Layer (SSL) over http (https).
 
 This backend can read and write data to the Tardigrade Decentralized Cloud Storage.
 
-URL Format:
-
-`tardigrade://hostname:port/uri/$DIRCAP`
-
 Supported options:
 
 * `--tardigrade-auth-method (String): The authentication method`
@@ -829,10 +825,6 @@ The folder within the bucket where the backup will reside in.
 
 Object storage (Cloud Object Storage, COS) is a distributed storage service for storing massive files provided by
  Tencent Cloud, which has the advantages of high scalability, low cost, reliability and security.
-
-URL Format:
-
-`cos://hostname:port/uri/$DIRCAP`
 
 Supported options:
 
