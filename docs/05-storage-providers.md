@@ -294,28 +294,6 @@ Use this flag to communicate using Secure Socket Layer (SSL) over http (https).
 * `--debug-propfind-file`
 To aid in debugging issues, it is possible to set a path to a file that will be overwritten with the PROPFIND response
 
-## Amazon Cloud Drive
-
-This backend can read and write data to Amazon Cloud Drive.
-
-URL Format:
-
-`amzcd://folder/subfolder`
-
-Options:
-
-* `--authid (Password)`
-The authorization code.
-The authorization token retrieved from https://duplicati-oauth-handler.appspot.com?type=amzcd
-* `--amzcd-labels (String)`
-The labels to set.
-Use this option to set labels on the files and folders created
-Default value: `duplicati,backup`
-* `--amzcd-consistency-delay (Timespan)`
-The consistency delay.
-Amazon Cloud drive needs a small delay for results to stay consistent.
-Default value: `15s`
-
 ## Azure blob
 
 This backend can read and write data to Azure blob storage.  To configure this backend you must create a storage account in the [Azure Portal](https://portal.azure.com) and get an access key by going to `Settings > Access keys` on the storage account details page.  The configuration options can either be provided as part of the URL or as separate parameters.  If both are provided, the URL parameters will take precedence.
