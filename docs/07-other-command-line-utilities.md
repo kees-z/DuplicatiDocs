@@ -296,3 +296,15 @@ This command downloads all files to the local folder specified by `<localfolder>
 > ![](icon_important.png) Warning: Before recompressing, delete the local database and recreate the local database again after recompressing. Do this before executing any operation on the backup so that Duplicati can read the new file names from remote storage.
 
 *****
+
+## Duplicati.CommandLine.ConfigurationImporter.exe
+This adds the ability to import backup configurations from the command-line. This should ease deployments by allowing one to import configurations without starting the web server and interacting with the web interface.
+
+The usage is as follows:
+```
+ConfigurationImporter.exe <configuration-file> --import-metadata=(true | false) [<advanced-option>]...
+```
+For example:
+```
+ConfigurationImporter.exe C:\backup-config.json --import-metadata=false --server-datafolder=<absolute path to folder that contains Duplicati-server.sqlite>
+```
