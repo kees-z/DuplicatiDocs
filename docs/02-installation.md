@@ -43,7 +43,7 @@ To be able to backup files that are in use by another process, Duplicati uses Al
 *****
 ![](icon_linux_begin.png) Follow this procedure to install Mono on your Linux based system.
 
-**Ubuntu 20.04:**  
+**Ubuntu 20.04 / 20.10:**  
 ```nohighlight
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 
@@ -51,7 +51,7 @@ echo "deb https://download.mono-project.com/repo/ubuntu stable-focal main" | sud
 
 sudo apt update
 
-sudo apt install mono-devel gtk-sharp2 
+sudo apt install mono-devel gtk-sharp2 libappindicator0.1-cil libmono-2.0-1
 ```
 
 **Ubuntu 18.04:**  
