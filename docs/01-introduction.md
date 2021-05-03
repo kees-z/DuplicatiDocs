@@ -104,7 +104,6 @@ Backups to these targets using the following standard network protocols are supp
 
 The following Cloud Storage Providers are supported natively by Duplicati:
 
-* Amazon Cloud Drive
 * Amazon S3
 * Azure blob
 * B2 Cloud Storage
@@ -123,6 +122,8 @@ The following Cloud Storage Providers are supported natively by Duplicati:
 * Rackspace CloudFiles
 * Rclone
 * Sia Decentralized Cloud
+* Tardigrade Decentralized Cloud Storage
+* Tencent COS
 
 Other supported targets:
 
