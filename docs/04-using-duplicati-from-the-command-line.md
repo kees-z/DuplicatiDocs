@@ -36,6 +36,12 @@ Generally, each operation from the command line has the following format:
 Storage-URL, arguments and advanced-options may or may not be mandatory, depending on the command you execute.
 
 *****
+> ![](icon_info.png) Advanced options are preceeded with 2 dashes (`--`), followed by an equal=sign (`=`) and the desired value:  
+> `--advanced-option=value`
+
+*****
+
+*****
 > ![](icon_info.png) From this point, only Duplicati.CommandLine.exe will be used as reference to the Commandline tool. Linux and Mac OS X users should replace this with duplicati-cli or mono Duplicati.CommandLine.exe.
 
 *****
