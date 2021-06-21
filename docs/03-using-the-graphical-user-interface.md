@@ -713,7 +713,10 @@ Access to user interface
 
 Click to check the _Password_ checkbox to secure the web interface with a password. Type a strong password in the text field. Click the OK button to confirm your setting. Next time you access the web interface you have to type the password to access the Duplicati web interface.
 
-When enabled, _Allow remote access_ allows access to the web interface from other hosts in the network.
+When enabled, _Allow remote access_ allows access to the web interface from other hosts in the network.  
+You can limit remote access by specifying one or more allowed hostnames. If this field is left blank, access is only allowed using the IP address of the interface Duplicati is listening on. An asterisk (`*`) will allow any hostname for accessing the web interface. Multiple hostnames can be separated by a semicolon.  
+
+When using the tray-icon, the web interface opens without asking for a password, even is a password is set. If this is not desirable, selecting this checkbox enables asking for a password when clicking the tray icon to access the web interface.
 
 *****
 > ![](icon_info.png) If you are using a firewall, don't forget to make an access rule to allow incoming traffic using the port the Duplicati server listens on (default port is TCP port 8200).
