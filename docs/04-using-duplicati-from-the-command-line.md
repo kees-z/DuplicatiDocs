@@ -36,8 +36,11 @@ Generally, each operation from the command line has the following format:
 Storage-URL, arguments and advanced-options may or may not be mandatory, depending on the command you execute.
 
 *****
-> ![](icon_info.png) Advanced options are preceeded with 2 dashes (`--`), followed by an equal=sign (`=`) and the desired value:  
-> `--advanced-option=value`
+> ![](icon_info.png) Advanced options with a value are preceeded with 2 dashes (`--`), followed by an equal=sign (`=`) and the desired value:  
+> `--advanced-option=value`  
+> Advanced options that don't have a value (just turn on an option) can be specified in 2 ways:  
+> `--advanced-option=true`  (`--advanced-option=false` disables the option)  
+> `--advanced-option`  
 
 *****
 
