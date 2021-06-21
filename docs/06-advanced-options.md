@@ -285,10 +285,19 @@ Filters are matched against the log tag and assumed to be including, unless they
 ### log-file-log-level
 `--log-file-log-level = Warning`  
 Log file information level
+Possible options: See `log-level`.
 
 ### log-level
 `--log-level = Warning`  
-Specifies the amount of log information to write into the file specified by `--log-file`.
+Specifies the amount of log information to write into the file specified by `--log-file`.  
+Suppored options:  
+* `Error`: Error messages only.  
+* `Warning`: Also warnings, meaning that later errors may be related to this message.  
+* `DryRun`: Also messages from dry- run output.  
+* `Information`: Also informational messages that do not indicate problems.  
+* `Retry`: Also messages from a retry.  
+* `Profiling`: Also messages that are not wanted for display.  
+* `ExplicitOnly`: Also messages that are only be shown if explicitly requested.  
 
 ### log-retention
 `--log-retention = 30D`  
