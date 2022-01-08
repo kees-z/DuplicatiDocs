@@ -263,7 +263,7 @@ Analyses the backup and prepares a report with anonymous information. This repor
 
 ## The TEST-FILTERS command
 
-Scans the source files and tests against the filters specified, the console output shows which files and folders are examined and the result. Usgae:
+Scans the source files and tests against the filters specified, the console output shows which files and folders are examined and the result. Usage:
 
 `Duplicati.CommandLine.exe test-filters <source-path> [<options>]`
 
