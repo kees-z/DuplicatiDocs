@@ -221,7 +221,15 @@ brew install mono
 
 ## Downloading Duplicati
 
-Duplicati can be downloaded from [https://www.duplicati.com/download](https://www.duplicati.com/download). Choose the version that matches your operating system. The Zip file version contains the binaries without an OS-specific installer. Use the Zip file version for a portable installation or if you want to use the Command Line tools only. This version can be used for all supported operating systems.
+Duplicati can be downloaded from [https://www.duplicati.com/download](https://www.duplicati.com/download).
+
+There are three main builds available:
+
+- **Beta**: This is the most stable build and is recommended for most users. This allows you to test the new features we're working on. Ensure you test restoring data with this version prior to using it in production environments.
+- **Experimental**: Specific builds for developers only. Not for use with important data.
+- **Canary**: Individual builds for developers only. Not for use with important data.
+
+Choose the build that best suits your needs. Then, choose version that matches your operating system from that build. The Zip file version contains the binaries without an OS-specific installer. Use the Zip file version for a portable installation or if you want to use the Command Line tools only. This version can be used for all supported operating systems.
 
 ## Installing Duplicati on Windows
 
