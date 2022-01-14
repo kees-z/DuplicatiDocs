@@ -697,7 +697,7 @@ The creation of the bug report starts immediately.
 
 When completed, a message is displayed and you can download the generated report.
 
-![](ss_createbugreport_02.png)
+![](ss_createbugreport_03.png)
 
 Click the Download button and send the report to the Duplicati development team for further investigation.
 
