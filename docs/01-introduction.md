@@ -119,6 +119,7 @@ The following Cloud Storage Providers are supported natively by Duplicati:
 * Microsoft OneDrive
 * Microsoft SharePoint
 * OpenStack Simple Storage
+* Poli Systems S3
 * Rackspace CloudFiles
 * Rclone
 * Sia Decentralized Cloud
