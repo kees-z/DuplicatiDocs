@@ -552,6 +552,7 @@ Default value: `false`
 ## Scripting options
 
 With these options you can executes a script before starting an operation, and again on completion. Module is loaded automatically, use `--disable-module` to prevent this.
+**Warning** 'before' scripts can set environment variable(s) by writing to stdout. See run-script-exemple for more information.
 
 ### run-script-before
 `--run-script-before (Path)`  
