@@ -83,4 +83,5 @@ pages:
         - "Choosing Sizes in Duplicati": "appendix-c-choosing-sizes-in-duplicati.md"
         - "Filters": "appendix-d-filters.md"
         - "How We Get Along With OAuth": "appendix-e-how-we-get-along-with-oauth.md"
-    - License Agreement: "appendix-f-license-agreement.md"
+        - "Example Scripts": "appendix-g-example-scripts.md"
+        - "License Agreement: "appendix-f-license-agreement.md"
