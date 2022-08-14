@@ -27,6 +27,13 @@ Allow system to enter sleep power modes for inactivity during backup/restore ope
 `--all-versions = false`  
 When searching for files, only the most recent backup is searched. Use this option to show all previous versions too.
 
+### asynchronous-concurrent-upload-limit
+`--asynchronous-concurrent-upload-limit = 4`  
+When performing asynchronous uploads, the maximum number of concurrent uploads allowed. Set to zero to disable the limit.
+
+If you are using a (external) hard disk as backend/destination, it is recommended to set the value to 1, because hard disks are bad at multiple, simultaneous write accesses.
+However, if you use an SSD as backend/destination, you can leave this value unchanged, because SSDs can handle multiple simultaneous writes much better.
+
 ### asynchronous-upload-folder
 `--asynchronous-upload-folder = C:\Users\User\AppData\Local\Temp\`    
 The pre-generated volumes will be placed into the temporary folder by default, this option can set a different folder for placing the temporary volumes, despite the name, this also works for synchronous runs.
