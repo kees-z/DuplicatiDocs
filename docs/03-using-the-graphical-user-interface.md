@@ -188,12 +188,25 @@ An Upload Volume is an encrypted compressed file that contains a part of your ba
 
 The retention can be set in 3 ways:
 
-* **Unlimited:**  
+* **Keep all backups:**  
 Backups will never be deleted. This is the most safe option, but remote storage capacity will keep increasing.
-* **Until they are older than:**  
+* **Delete backups that are older than:**  
 Backups older than a specified number of days, weeks, months or years will be deleted.
-* **A specific number:**  
+* **Keep a specific number of backups:**  
 The specified number of backup versions will be kept, all older backups will be deleted.
+* **Custom backup retention:**
+Enter your own settings in the text box that appears.
+* **Smart backup retention:**
+retains one backup for each of the last 7 days, each of the last 4 weeks, and each of the last 12 months.
+
+Consider the case of Smart Backup Retention. Using Duplicati notation it can be written as '1W:1D,4W:1W,12M:1M'. This results in this behaviour:
+
+**Active files:** Files that exist in the source will continue to be included in at least one backup version. For example, a file that exists in the source but which is 3 years old will still be in at least one backup version, regardless of the rentention policy.
+
+**Deleted files:** When a file is deleted from the source it will not be included in any new backups. Old backup versions will retain a copy of the deleted file for at least 12 months. After 12 months the last backup version to include it will eventually be removed.
+
+**Modified files:** When a file's content changes, previous versions will follow the backup retention policy. In other words, there will be a maximum of one version per day for the last week, one version per week for the last 4 weeks, and one version per month for the last 12 months. A daily version that ages to over a week old will either be retained as that week's version, or deleted.
+
 
 ![](ss_newbackup_10.png)
 
