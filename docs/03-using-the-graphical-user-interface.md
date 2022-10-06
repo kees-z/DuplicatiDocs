@@ -186,7 +186,7 @@ An Upload Volume is an encrypted compressed file that contains a part of your ba
 
 *****
 
-The retention can be set in 3 ways:
+The retention can be set in 5 ways:
 
 * **Keep all backups:**  
 Backups will never be deleted. This is the most safe option, but remote storage capacity will keep increasing.
