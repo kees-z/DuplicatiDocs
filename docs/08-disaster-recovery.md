@@ -97,7 +97,7 @@ C:\Users\User\Pictures\file0001176452626.jpg
 The second command returns affected backup versions and source files for remote file `duplicati-b5f8cd40e22a54b5b988689370b8cde34.dblock.zip.aes`:
 
 ```nohighlight
-Duplicati.CommandLine.exe affected "ftp://myftpserver.com/Backup/Pictures?auth-username=Duplicati&auth-password=backup" duplicati-b5f8cd40e22a54b5b988689370b8cde34.dblock.zip.aes --dbpath="C:\Users\User\DuplicatiCanary\data\WCHNJBICGG.sqlite" --full-result</span></span>
+Duplicati.CommandLine.exe affected "ftp://myftpserver.com/Backup/Pictures?auth-username=Duplicati&auth-password=backup" duplicati-b5f8cd40e22a54b5b988689370b8cde34.dblock.zip.aes --dbpath="C:\Users\User\DuplicatiCanary\data\WCHNJBICGG.sqlite" --full-result
 ```
 
 Only the last 2 backup versions are affected (version 0 and 1), These 2 files cannot be restored if this remote file is missing or corrupted:
