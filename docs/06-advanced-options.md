@@ -324,7 +324,7 @@ Duplicati will attempt to perform multiple operations on a single connection, as
 
 ### no-encryption
 `--no-encryption = false`  
-If you store the backups on a local disk, and prefer that they are kept unencrypted, you can turn of encryption completely by using this switch.
+If you store the backups on a local disk, and prefer that they are kept unencrypted, you can turn off encryption completely by using this switch.
 
 ### no-local-blocks
 `--no-local-blocks = false`  
