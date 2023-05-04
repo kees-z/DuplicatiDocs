@@ -384,20 +384,22 @@ If symlink metadata is applied, it will usually mean changing the symlink target
 
 ### retention-policy
 `--retention-policy`  
-Use this option to limit growth or reduce the size of a backup. This is achieved by erasing all versions which are closer than a specified time distance from the preceeding version, thus keeping only one version after an each interval. The intervall may increase in steps. Backup data which are not referred by any version any longer, get purched. 
+Use this option to limit growth or reduce the size of a backup. This is achieved by erasing all versions which are closer than a specified time distance from the preceeding version, thus keeping only one version after an each interval. The interval may increase in steps. Backup data which are not referred by any version any longer, get purched. 
 --retention-policy is mutual exclusive to the other retention options --keep-time and --keep-version.
 
 Specify one or more timeframe:interval duples, such as '7D:0s'
 Valid letters for time: 's', 'm', 'h', 'D', 'W', 'M', 'Y'
 Multiple duples shall be comma separated, and time frames shall be increasing.
-For example the value '7D:0s,3M:1D,10Y:2M' means "during the next 7 day keep all backups, during the next 3 months keep a daily backup and for 10 years one backup every 2nd month. 
+For example the value '7D:0s,3M:1D,10Y:2M' means "during the next 7 day keep all backups, during the next 3 months from now keep a daily backup and for 10 years from now keep one backup every 2nd month. 
 0s stands for an interval of zero length, allowing unlimited versions to be kept, which can be also noted as 'U'
-Time frames all start at "now" and overlap, with smaller time frames taking priority, thus the effective duration of longer time frames becomes shorter.
+To avoid gaps, time frames all start at "now" and overlap, with smaller time frames taking priority, thus the effective duration of longer time frames becomes shorter.
 
 Versions which are outside of any time frame will be erased. A safeguard prevents that at least one version is retained (which is the most recent). This can be overridden by --allow-full-removal.
-The most current index is excluded from retention-policy, so whenever a backup is run manually it will be kept, until the next run, then the rules apply. This can also be overridden by --allow-full-removal.
+Hence, the latest (most current) version of existing files will be kept unlimited time, while deleted or lost files and older-than-current versions of existing files will be purged after the longest time frame.
 
-Notice that 'versions' are in fact indices that refer to versions of the source and backups. When indices age through the schema, they will be passed from one timeframe to the next. Every rule checks if an entering index fits in the intervall, and if the distance to the preceding index is to short, the newer index will get purged. The deduplication of the backup volume implicate that file are referred by multiple indices. Only backup data which are not longer referred by any index, respectively not longer needed to restore any preserved version of the source, get purged. 
+The most current version is excluded from retention-policy, so whenever a backup is run manually it will be kept, until the next run, then the rules apply. This can also be overridden by --allow-full-removal.
+
+Notice that 'versions' are in fact indices that refer to versions of the source and backups. When indices age through the schema, they will be passed from one timeframe to the next. Every rule checks if an entering index fits in the intervall, and if the distance to the preceding index is to short, the newer index will get purged. The deduplication of the backup volume implicate that file are referred by multiple indices. Only backup data will be purged, which are not longer referred by any index, respectively are not longer needed to restore any preserved version of the source. 
 
 ### retry-delay
 `--retry-delay = 10s`  
