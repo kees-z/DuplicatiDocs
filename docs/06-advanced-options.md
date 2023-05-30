@@ -623,7 +623,7 @@ Extra parameters to add to the http message. I.e. `parameter1=value1&parameter2=
 ### send-http-level
 `--send-http-level (Enumeration)`  
 The messages to send.  
-You can specify one of `Success`, `Warning`, `Error`, `Fatal`. You can supply multiple options with a comma separator, e.g. `Success,Warning`. The special value `All is a shorthand for `Success,Warning,Error,Fatal` and will cause all backup operations to send a message.  
+You can specify one of `Success`, `Warning`, `Error`, `Fatal`. You can supply multiple options with a comma separator, e.g. `Success,Warning`. The special value `All` is a shorthand for `Success,Warning,Error,Fatal` and will cause all backup operations to send a message.  
 Values: `Unknown`, `Success`, `Warning`, `Error`, `Fatal`, `All`  
 Default value: `all`
 
