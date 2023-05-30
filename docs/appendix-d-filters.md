@@ -45,7 +45,7 @@ Meta group which contains all groups that are commonly excluded, which is curren
 
 In the UI, filters can be created using drop down boxes for common rule types. More advanced users can also use a textbox to specify multiple rules, with a rules to include starting with `+` and rules to exclude starting with `-`.
 
-Using the command-line there are specific settings to specify include or exclude rules. These are `--include` and `--exclude`. Multiple rules can be specified by using `--include` or `--exclude` repeatedly.
+Using the command-line there are specific settings to specify include or exclude rules. These are `--include` and `--exclude`. Multiple rules can be specified by using `--include` or `--exclude` repeatedly. Note that on Windows a trailing backslash (part of a folder rule) and only that must be doubled to avoid escaping the quotes. Thus a rule looks like `--exclude="*\a\folder rule\\"`. Backslashes in regular expressions must be doubled always: `--exclude="[.*\\a\\folder rule\\]"`
 
 ### Creating and validating your filters
 
