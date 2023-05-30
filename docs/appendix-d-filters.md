@@ -21,7 +21,7 @@ If you want to use file globbing to specify rules, `?` and `*` are allowed place
 
 Rules can also be specified as regular expression. In this case put the regular expression (using [.NET syntax](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)) into hard brackets `[]`. For example, `[.*/IMG_\d{4}\.jpg]` would specify all files named `IMG_0000.jpg` through `IMG_9999.jpg`.
 
-Duplicati also has several built-in filter groups, which define set of well-known files and folders for different operating systems. These can be specified by putting the names or aliases of the desired groups inside curly brackets `{}` separated by commas `,`, for example, `{SystemFiles,OperatingSystem}`. The following groups are currently defined:
+Duplicati also has several built-in filter groups, which define set of well-known files and folders for different operating systems. These can be specified by putting the names or aliases of the desired groups inside curly brackets `{}` separated by commas `,`, for example, `{SystemFiles,OperatingSystem}`. In the UI, you can select these via a dropdown in the right column by selecting 'Exclude filter group' from the dropdown in the left column. The following groups are currently defined:
 
 - **SystemFiles**  
 Files and paths that are owned by the operating system or are not real files.  
