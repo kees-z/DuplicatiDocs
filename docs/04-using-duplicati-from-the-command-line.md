@@ -275,7 +275,10 @@ Issue this following command to see a variety of system information relevant to 
 
 ## The SEND-MAIL command
 
-Duplicati can send email notifications after each operation. Use the send-mail command to test this. Usage:
+Duplicati can send email notifications after each operation. Use the send-mail command to test this.
+As this is a command line tool, using quotes around "parameters" may be **necessary**, however in the Web UI, quoting parameters can be **harmful**.
+
+Usage:
 
 `Duplicati.CommandLine.exe send-mail --send-mail-to=<email-address> [<options>]`
 
