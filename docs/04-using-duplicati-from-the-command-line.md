@@ -45,6 +45,12 @@ Storage-URL, arguments and advanced-options may or may not be mandatory, dependi
 *****
 
 *****
+> ![](icon_important.png) When using the command line tools, if any value (like a password) contains one or more special characters, enclose that value in double quotes or URL encode the special characters in that value.
+> Keep in mind that this is not necessary when using the Web UI, as the Web UI will automatically convert special characters in the background. In that case, quotes will be considered as a literal part of the value.
+
+*****
+
+*****
 > ![](icon_info.png) From this point, only Duplicati.CommandLine.exe will be used as reference to the Commandline tool. Linux and Mac OS X users should replace this with duplicati-cli or mono Duplicati.CommandLine.exe.
 
 *****
