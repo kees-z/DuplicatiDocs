@@ -11,7 +11,7 @@ repo_name: 'kees-z/DuplicatiDocs'
 repo_url: 'https://github.com/kees-z/DuplicatiDocs/'
 
 # Copyright
-copyright: 'Copyright &copy; 2016 - 2020 The Duplicati Team'
+copyright: 'Copyright &copy; 2016 - 2023 The Duplicati Team'
 
 # Configuration
 theme:
@@ -40,12 +40,6 @@ extra:
     - type: 'github'
       link: 'https://github.com/duplicati/duplicati'
       icon: 'fontawesome/brands/github'
-    - type: 'google-plus'
-      link: 'https://plus.google.com/105271984558189185842'
-      icon: 'fontawesome/brands/google-plus'
-    - type: 'facebook'
-      link: 'http://www.facebook.com/pages/Duplicati/105118456272281'
-      icon: 'fontawesome/brands/facebook'
     - type: 'donate'
       link: 'https://www.duplicati.com/donate'
       icon: 'fontawesome/regular/credit-card'
