@@ -229,11 +229,19 @@ By default, your system locale and culture settings will be used. In some cases 
 
 ### full-block-verification
 `--full-block-verification = false`  
-Use this option to increase verification by checking the hash of blocks read from a volume before patching restored files with the data.
+Use this option to increase verification by checking the hash of ALL blocks in a block volume.
+When restoring, all blocks of a volume are tested or none according to this option.  
+When testing, if this option is set all blocks of a volume are tested, if not, a random 20%.  
+When testing, this option implies --full-remote-verification.  
+It is defaulting to false in both backup and explicit test, since it is using several database queries for each block in a remote volume, which is slow.  
 
 ### full-remote-verification
 `--full-remote-verification = false`  
-After a backup is completed, some files are selected for verification on the remote backend. Use this option to turn on full verification, which will decrypt the files and examine the insides of each volume, instead of simply verifying the external hash, If the option `--no-backend-verification` is set, no remote files are verified. This option is automatically set when then verification is performed directly.
+After a backup is completed, some (by default 1 of each type, see the --backup-test- options to change that) files are selected for verification on the remote backend; use this option to turn on verification of the selected volumes, which will decrypt and verify their content, instead of simply verifying the volume hash if false.  
+Note that whatever the option value, the volume has to be fetched from the backend, but no temporary file is created when just checking the hash.
+For backups, to have any effect, the --no-backend-verification option should be NOT set.   
+For tests launched independently of backups (test in command line mode), if defined, it is set by default to false. However, if not defined, a full remote verification is performed.  
+Note that a data volume is not necessarily completely verified, see above --full-block-verification.  
 
 ### full-result
 `--full-result = false`  
