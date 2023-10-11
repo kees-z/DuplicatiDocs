@@ -284,9 +284,6 @@ Options:
 The password used to connect to the server. This may also be supplied as the environment variable "AUTH_PASSWORD".
 * `--auth-username`
 The username used to connect to the server. This may also be supplied as the environment variable "AUTH_USERNAME".
-* `--azure-blob-container_name (String)`
-The name of the storage container.
-All files will be written to the container specified.
 * `--integrated-authentication`
 If the server and client both supports integrated authentication, this option enables that authentication method. This is likely only available with windows servers and clients.
 * `--force-digest-authentication`
@@ -320,6 +317,12 @@ An alternative parameter for specifying the storage account name. This parameter
 * `--auth-password (Password)`
 The storage account access key.
 An alternative parametyr for specifying the storage account access key. This parameter will be ignored if the access key is specified in the URL or the `--azure-access_key` parameter is provided. This may also be supplied as the environment variable `AUTH_PASSWORD`.
+* `--azure-blob-container-name (String)`
+The name of the storage container.
+All files will be written to the container specified.
+
+The Azure blobs don't support folders, try to use the --prefix general advanced option if you want to manage several backups in one container.
+
 
 ## B2 Cloud Storage
 
