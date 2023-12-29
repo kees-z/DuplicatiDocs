@@ -43,7 +43,7 @@ To be able to backup files that are in use by another process, Duplicati uses Al
 *****
 ![](icon_linux_begin.png) Follow this procedure to install Mono on your Linux based system.
 
-**Ubuntu 20.04 / 20.10:**  
+**Ubuntu 20.04 / 22.04 / 23.10:**  
 ```nohighlight
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 
@@ -213,6 +213,14 @@ Alternatively, you can install Mono using Homebrew:
 ```nohighlight
 brew install mono
 ```
+
+To use the tray icon, you currently have to install python3 (you can check that by running /usr/bin/python3) and add pyobjc by hand from a terminal:
+
+```nohighlight
+sudo pip3 install pyobjc
+```
+
+There is no need to reinstall Duplicati if it's already present.
 
 ![](icon_apple_end.png)
 
