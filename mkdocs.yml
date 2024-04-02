@@ -40,9 +40,6 @@ extra:
     - type: 'github'
       link: 'https://github.com/duplicati/duplicati'
       icon: 'fontawesome/brands/github'
-    - type: 'donate'
-      link: 'https://www.duplicati.com/donate'
-      icon: 'fontawesome/regular/credit-card'
 
 
 # Google Analytics
