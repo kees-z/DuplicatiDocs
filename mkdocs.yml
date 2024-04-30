@@ -1,51 +1,49 @@
-
-
 # Project information
 site_name: "Duplicati 2 User's Manual"
-site_description: 'Documentation for Duplicati 2'
-site_author: 'K. Zaaijer'
-site_url: 'https://www.duplicati.com/'
+site_description: "Documentation for Duplicati 2"
+site_author: "K. Zaaijer"
+site_url: "https://duplicati.com/"
 
 # Repository
-repo_name: 'kees-z/DuplicatiDocs'
-repo_url: 'https://github.com/kees-z/DuplicatiDocs/'
+repo_name: "kees-z/DuplicatiDocs"
+repo_url: "https://github.com/kees-z/DuplicatiDocs/"
 
 # Copyright
-copyright: 'Copyright &copy; 2016 - 2023 The Duplicati Team'
+copyright: "Copyright &copy; 2016 - 2023 The Duplicati Team"
 
 # Configuration
 theme:
-  name: 'material'
-  language: 'en'
+  name: "material"
+  language: "en"
+  custom_dir: overrides
   palette:
-    primary: 'blue'
-    accent: 'blue'
+    primary: "blue"
+    accent: "blue"
   font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
-  logo: 'duplicatilogo.png'
-  favicon: 'favicon.ico'
+    text: "Roboto"
+    code: "Roboto Mono"
+  logo: "duplicatilogo.png"
+  favicon: "favicon.ico"
   feature:
     tabs: false
 
 # Customization
 extra:
   social:
-    - type: 'edge'
-      link: 'https://www.duplicati.com'
-      icon: 'fontawesome/regular/newspaper'
-    - type: 'comment'
-      link: 'https://forum.duplicati.com'
-      icon: 'fontawesome/regular/comment'
-    - type: 'github'
-      link: 'https://github.com/duplicati/duplicati'
-      icon: 'fontawesome/brands/github'
-
+    - type: "edge"
+      link: "https://duplicati.com"
+      icon: "fontawesome/regular/newspaper"
+    - type: "comment"
+      link: "https://forum.duplicati.com"
+      icon: "fontawesome/regular/comment"
+    - type: "github"
+      link: "https://github.com/duplicati/duplicati"
+      icon: "fontawesome/brands/github"
 
 # Google Analytics
 google_analytics:
-  - 'UA-XXXXXXXX-X'
-  - 'auto'
+  - "UA-XXXXXXXX-X"
+  - "auto"
 
 # Extensions
 markdown_extensions:
@@ -55,24 +53,22 @@ markdown_extensions:
   - toc:
       permalink: true
 
-
-
 nav:
-    - Home: index.md
-    - Manual:
-        - Introduction: 01-introduction.md
-        - Installation: 02-installation.md
-        - Using the Graphical User Interface: "03-using-the-graphical-user-interface.md"
-        - Using Duplicati from the Command Line: "04-using-duplicati-from-the-command-line.md"
-        - Storage Providers: "05-storage-providers.md"
-        - Advanced Options: "06-advanced-options.md"
-        - Other Command Line Utilities: "07-other-command-line-utilities.md"
-        - Disaster Recovery: "08-disaster-recovery.md"
-    - Articles:
-        - "How the Backup Process Works": "appendix-a-how-the-backup-process-works.md"
-        - "How the Restore Process Works": "appendix-b-how-the-restore-process-works.md"
-        - "Choosing Sizes in Duplicati": "appendix-c-choosing-sizes-in-duplicati.md"
-        - "Filters": "appendix-d-filters.md"
-        - "How We Get Along With OAuth": "appendix-e-how-we-get-along-with-oauth.md"
-        - "Example Scripts": "appendix-g-example-scripts.md"
-        - "License Agreement": "appendix-f-license-agreement.md"
+  - Home: index.md
+  - Manual:
+      - Introduction: 01-introduction.md
+      - Installation: 02-installation.md
+      - Using the Graphical User Interface: "03-using-the-graphical-user-interface.md"
+      - Using Duplicati from the Command Line: "04-using-duplicati-from-the-command-line.md"
+      - Storage Providers: "05-storage-providers.md"
+      - Advanced Options: "06-advanced-options.md"
+      - Other Command Line Utilities: "07-other-command-line-utilities.md"
+      - Disaster Recovery: "08-disaster-recovery.md"
+  - Articles:
+      - "How the Backup Process Works": "appendix-a-how-the-backup-process-works.md"
+      - "How the Restore Process Works": "appendix-b-how-the-restore-process-works.md"
+      - "Choosing Sizes in Duplicati": "appendix-c-choosing-sizes-in-duplicati.md"
+      - "Filters": "appendix-d-filters.md"
+      - "How We Get Along With OAuth": "appendix-e-how-we-get-along-with-oauth.md"
+      - "Example Scripts": "appendix-g-example-scripts.md"
+      - "License Agreement": "appendix-f-license-agreement.md"
