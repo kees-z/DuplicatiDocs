@@ -9,7 +9,7 @@ repo_name: "kees-z/DuplicatiDocs"
 repo_url: "https://github.com/kees-z/DuplicatiDocs/"
 
 # Copyright
-copyright: "Copyright &copy; 2016 - 2023 The Duplicati Team"
+copyright: "Copyright &copy; 2016 - 2024 The Duplicati Team"
 
 # Configuration
 theme:
