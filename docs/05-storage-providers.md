@@ -263,6 +263,7 @@ To guard against man-in-the-middle attacks, the server fingerprint is verified o
 * `--ssh-keyfile`
 Points to a valid OpenSSH keyfile. If the file is encrypted, the password supplied is used to decrypt the keyfile.
 If this option is supplied, the password is not used to authenticate. This option only works when using the managed SSH client.
+This key should be in PEM format, e.g. created with `ssh-keygen -m pem`.
 * `--ssh-key`
 An url-encoded SSH private key. The private key must be prefixed with `sshkey://`. If the file is encrypted, the password supplied is used to decrypt the keyfile. If this option is supplied, the password is not used to authenticate. This option only works when using the managed SSH client.
 * `--ssh-operation-timeout = 0`
