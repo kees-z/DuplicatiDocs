@@ -614,7 +614,16 @@ These options provide support for sending status reports via HTTP messages. Modu
 
 ### send-http-url
  `--send-http-url (String)`  
-HTTP report url.
+HTTP report url.  
+*This option is deprecated. For version 2.0.8.106 and newer, use* `--send-http-form-urls` *and* `--send-http-json-urls` *instead.*
+
+### send-http-form-urls
+ `--send-http-form-urls (String)`  
+HTTP report urls for sending form-encoded data. This property accepts multiple urls, separated by a semi-colon. All urls will receive the same data. Note that this option ignores the format and verb settings.
+
+### send-http-json-urls
+ `--send-http-json-urls (String)`  
+HTTP report urls for sending JSON data. This property accepts multiple urls, separated by a semi-colon. All urls will receive the same data. Note that this option ignores the format and verb settings.
 
 ### send-http-message
 `--send-http-message (String)`  
