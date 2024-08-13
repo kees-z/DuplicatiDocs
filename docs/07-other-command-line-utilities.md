@@ -69,7 +69,7 @@ The path to the folder where the static files for the webserver is present. The 
 * `--webservice-port`  
 The port the webserver listens on. Multiple values may be supplied with a comma in between.
 * `--webservice-sslcertificatefile`  
-The certificate and key file in PKCS #12 format the webserver use for SSL. Only RSA/DSA keys are supported.
+The certificate and key file in PKCS #12 format the webserver use for SSL. Only RSA/DSA keys are supported. Also, under mono, the modern (i.e. AES) encryptions for the PKCS#12 files are not supported (PBE-SHA1-3DES is one example that works).
 * `--webservice-sslcertificatepassword`  
 The password for decryption of certificate PKCS #12 file.
 * `--webservice-interface`  
