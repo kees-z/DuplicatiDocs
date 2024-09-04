@@ -351,7 +351,7 @@ Restart=always
 WantedBy=multi-user.target
 ```
 
-Edit the file /etc/default/duplicati and add DAEMON_OPTS options to your liking:
+Edit the file /etc/default/duplicati and add DAEMON_OPTS options to your liking, for example:
 `sudo nano /etc/default/duplicati`
 
 ```nohighlight
@@ -366,6 +366,12 @@ Edit the file /etc/default/duplicati and add DAEMON_OPTS options to your liking:
 # Additional options that are passed to the Daemon.
 DAEMON_OPTS="--webservice-interface=any --webservice-port=8200 --portable-mode"
 ```
+
+*****
+> ![](icon_important.png) The variable `DAEMON_OPTS=` is the commandline arguments passed to the server. The meaning of the options that are passed are described in [Other Command Line Utilities, `Duplicati.Server.exe`](https://docs.duplicati.com/en/latest/07-other-command-line-utilities/#duplicatiserverexe). Note that the example uses `--webservice-interface=any` which is only recommended for environments where the network is secured, not for local installations.
+*****
+
+
 Enable, start and check running status of the duplicati service:
 ```
 sudo systemctl enable duplicati.service
