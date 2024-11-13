@@ -147,7 +147,7 @@ In step 3 you can select the files and folders you want to include in the backup
 *****
 
 *****
-> ![](icon_info.png) Clicking an item in the file picker will add that item and all child items to the source selection list. This is indicated with a green check mark. Clicking it a second time changes the check mark to a red cross. This excludes that item an all child items from the backup.
+> ![](icon_info.png) Clicking an item in the file picker will add that item and all child items to the source selection list. This is indicated with a green check mark. Clicking it a second time changes the check mark to a red cross. This excludes that item and all child items from the backup.
 
 *****
 
